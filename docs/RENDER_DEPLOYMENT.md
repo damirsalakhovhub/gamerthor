@@ -168,3 +168,4 @@ gamerthor/
 
 - GitHub: [damirsalakhovhub/gamerthor](https://github.com/damirsalakhovhub/gamerthor)
 - Render: [gamerthor.onrender.com](https://gamerthor.onrender.com)
+

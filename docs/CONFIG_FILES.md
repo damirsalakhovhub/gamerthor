@@ -134,3 +134,4 @@ PORT=3000
 3. **config/database.yml** должен использовать PostgreSQL
 4. **Host Authorization** должен разрешать `.onrender.com`
 5. **Gemfile.lock** должен содержать `x86_64-linux` платформу
+

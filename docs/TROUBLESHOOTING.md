@@ -161,3 +161,4 @@ render restart --service gamerthor
 - Render Support: [support@render.com](mailto:support@render.com)
 - Render Documentation: [render.com/docs](https://render.com/docs)
 - GitHub Issues: [github.com/damirsalakhovhub/gamerthor/issues](https://github.com/damirsalakhovhub/gamerthor/issues)
+
