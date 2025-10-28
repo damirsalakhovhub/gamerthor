@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  # App routes (без сайдбара)
-  resources :users, only: [:create, :index, :show]
-  resources :sessions, only: [:new, :create, :destroy]
-  get 'logout', to: 'sessions#destroy'
-  delete 'logout', to: 'sessions#destroy'
+  # App routes (без сайдбара) - убраны users и sessions
   
   # Kit routes (с сайдбаром)
   get "kit", to: "kit#index"
