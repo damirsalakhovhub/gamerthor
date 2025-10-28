@@ -43,44 +43,13 @@
 
 .header__search input {
   flex: 1;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-}
-
-.header__search button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
 }
 
 .header__selectors {
   margin-right: 2rem;
 }
 
-.header__selectors button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
-  display: flex;
-  gap: 0.5rem;
-}
-
 .header__favorites,
 .header__cart {
   margin-right: 1rem;
-}
-
-.header__favorites button,
-.header__cart button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
-  display: flex;
-  gap: 0.5rem;
-}
-
-.header__login button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
 }
