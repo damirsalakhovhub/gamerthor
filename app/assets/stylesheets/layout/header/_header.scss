@@ -17,6 +17,34 @@
     gap: 1rem;
   }
 
+  &__actions {
+    display: flex;
+    gap: 1px;
+  }
+
+  // Специальные стили для кнопок в хедере
+  .btn {
+    .btn-text {
+      color: var(--color-text-secondary);
+    }
+
+    .btn-icon {
+      color: var(--color-text-tertiary);
+      width: var(--size-3xl);
+      height: var(--size-3xl);
+    }
+
+    &:hover {
+      .btn-text {
+        color: var(--color-text-primary);
+      }
+
+      .btn-icon {
+        color: var(--color-text-secondary);
+      }
+    }
+  }
+
   &__search {
     flex: 1;
     max-width: 40rem;

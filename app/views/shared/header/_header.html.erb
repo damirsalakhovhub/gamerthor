@@ -6,8 +6,10 @@
   
   <div class="header__right">
     <%= render 'shared/header/country_selector' %>
-    <%= render 'shared/header/favorites_button' %>
-    <%= render 'shared/header/cart_button' %>
+    <div class="header__actions">
+      <%= render 'shared/header/favorites_button' %>
+      <%= render 'shared/header/cart_button' %>
+    </div>
     <%= render 'shared/header/login_button' %>
   </div>
 </header>

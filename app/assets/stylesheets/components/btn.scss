@@ -7,7 +7,7 @@
   font-family: inherit;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color var(--transition), color var(--transition), transform var(--transition), border-color var(--transition);
+  // transition: background-color var(--transition), color var(--transition), transform var(--transition), border-color var(--transition);
 
   &:active {
     transform: translateY(1px);
@@ -41,7 +41,7 @@
 .btn-icon {
   flex-shrink: 0;
   display: block;
-  stroke: currentColor;
+  // stroke: currentColor;
   color: currentColor;
   opacity: .9;
 }
@@ -101,6 +101,7 @@
 
   .btn-text {
     padding: 0 var(--size-element-lg-text-padding);
+    line-height: var(--size-element-lg-text-line-height);
   }
   
   .btn-icon {
