@@ -7307,3 +7307,237 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 25ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for ::1 at 2025-10-28 21:36:02 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:36:04 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:36:37 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:36:43 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:36:51 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:41:32 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:43:05 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:44:06 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:44:25 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:44:57 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 1.0ms)
+Completed 200 OK in 25ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:45:07 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.6ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.3ms)
+Completed 200 OK in 26ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:45:26 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 21:45:33 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+

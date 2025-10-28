@@ -51,10 +51,10 @@
   --size-element-lg-font: var(--size-lg); //18px
   --size-element-lg-line-height: var(--size-2xl); //22px
   --size-element-lg-border-radius: var(--size-3xs); //8px
-  --size-element-lg-padding-y: var(--size-2xs); //10px
+  --size-element-lg-padding-y: 0.5rem;
   --size-element-lg-padding-x: var(--size-xs); //12px
   --size-element-lg-gap: var(--size-7xs); //3px
   --size-element-lg-icon: var(--size-xl); //20px
   --size-element-lg-text-padding: var(--size-7xs); //3px
-  --size-element-lg-text-line-height: var(--size-xl); //20px
+  --size-element-lg-text-line-height: var(--size-3xl); //24px
 }
