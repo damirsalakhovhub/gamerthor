@@ -6,8 +6,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border: none;
-  font-family: inherit;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color var(--transition), color var(--transition), border-color var(--transition);
   background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="%23333"/></svg>');
@@ -44,7 +43,7 @@
 }
 
 .select-lg {
-  font-size: var(--size-element-lg-font);
+  font-size: var(--size-element-md-font);
   line-height: var(--size-element-lg-line-height);
   border-radius: var(--size-element-lg-border-radius);
   padding: var(--size-element-lg-padding-y) 35px var(--size-element-lg-padding-y) 14px;
@@ -66,7 +65,7 @@
 /* Outline - селект с обводкой */
 .select-outline {
   background-color: var(--color-select-outline-bg);
-  color: var(--color-select-outline-text);
+  color: var(--color-text-secondary);
   box-shadow: inset 0 0 0 1px var(--color-select-outline-border);
 
   &:hover:not(:disabled) {

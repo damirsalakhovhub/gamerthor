@@ -1,7 +1,52 @@
-<div class="header__selectors">
-  <button class="btn btn-lg btn-default btn-rounded" aria-label="Select country, language and currency">
+<div class="header__selectors dropdown">
+  <button class="btn btn-lg btn-default btn-rounded dropdown__trigger" aria-label="Select country, language and currency" onclick="toggleDropdown('country-settings-dropdown')">
     <span class="btn-text">🇺🇸</span>
     <span class="btn-text">EN</span>
     <span class="btn-text">USD</span>
   </button>
+  
+  <div class="dropdown__menu" id="country-settings-dropdown">
+    <div class="dropdown__content">
+      <div class="dropdown__body">
+        <form class="form">
+          <%= render 'shared/forms/select_with_label', 
+            label_text: 'Region', 
+            input_id: 'region-select', 
+            input_name: 'region',
+            options: [
+              { value: 'spain', text: '🇪🇸 Spain', selected: true },
+              { value: 'usa', text: '🇺🇸 United States' },
+              { value: 'uk', text: '🇬🇧 United Kingdom' }
+            ] %>
+            
+          <%= render 'shared/forms/select_with_label', 
+            label_text: 'Language', 
+            input_id: 'language-select', 
+            input_name: 'language',
+            options: [
+              { value: 'en', text: 'English', selected: true },
+              { value: 'es', text: 'Spanish' },
+              { value: 'fr', text: 'French' }
+            ] %>
+            
+          <%= render 'shared/forms/select_with_label', 
+            label_text: 'Currency', 
+            input_id: 'currency-select', 
+            input_name: 'currency',
+            options: [
+              { value: 'eur', text: 'EUR', selected: true },
+              { value: 'usd', text: 'USD' },
+              { value: 'gbp', text: 'GBP' }
+            ] %>
+        </form>
+      </div>
+      
+      <div class="dropdown__footer">
+        <div class="dropdown__actions">
+          <button class="btn btn-md btn-default" onclick="closeDropdown('country-settings-dropdown')">Cancel</button>
+          <button class="btn btn-md btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,8 @@
+<div class="form-group">
+  <label class="form-label" for="<%= input_id %>"><%= label_text %></label>
+  <select class="select select-lg select-outline" id="<%= input_id %>" name="<%= input_name %>">
+    <% options.each do |option| %>
+      <option value="<%= option[:value] %>" <%= 'selected' if option[:selected] %>><%= option[:text] %></option>
+    <% end %>
+  </select>
+</div>

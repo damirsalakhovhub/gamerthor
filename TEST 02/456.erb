@@ -1,0 +1,22 @@
+<%# Пример кнопки в шапке (правый край окна по правому краю кнопки) %>
+<div class="header__selectors">
+  <button
+    class="btn btn-lg btn-default btn-rounded"
+    aria-label="Select country, language and currency"
+    aria-haspopup="dialog"
+    aria-controls="country-settings"
+    aria-expanded="false"
+    data-controller="anchored-dialog"
+    data-anchored-dialog-panel-id-value="country-settings"
+    data-anchored-dialog-offset-value="8"
+    data-anchored-dialog-align-value="end"
+    data-action="click->anchored-dialog#toggle"
+  >
+    <span class="btn-text">🇺🇸</span>
+    <span class="btn-text">EN</span>
+    <span class="btn-text">USD</span>
+  </button>
+</div>
+
+<%# В конце <body> (например, в layout): %>
+<%= render 'shared/country_settings_dialog' %>
