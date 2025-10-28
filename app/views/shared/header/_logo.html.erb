@@ -1,6 +1,7 @@
 <div class="header__logo">
   <a href="/" aria-label="Gamerthor - home page">
     <picture>
+      <source media="(max-width: 1100px)" srcset="<%= asset_path('gamerthor_logo_small.png') %>">
       <source media="(min-resolution: 2dppx)" srcset="<%= asset_path('gamerthor_logo_large.png') %>">
       <%= image_tag "gamerthor_logo_large.png", 
           alt: "Gamerthor - Gaming marketplace", 
