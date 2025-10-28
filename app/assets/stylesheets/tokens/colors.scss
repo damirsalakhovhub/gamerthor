@@ -241,21 +241,18 @@
   /* DARK THEME ------------------------------------------------------------ */
 
   [data-theme="dark"] {
-    :root {
+    /* Text Colors Dark Theme */
+    --color-text-primary: hsl(var(--gray-90));
+    --color-text-secondary: hsl(var(--gray-65));
+    --color-text-tertiary: hsl(var(--gray-40));
+    --color-text-quaternary: hsl(var(--gray-30));
+    --color-text-placeholder: hsl(var(--gray-30));
 
-      /* Text Colors Dark Theme */
-      --color-text-primary: hsl(var(--gray-90));
-      --color-text-secondary: hsl(var(--gray-65));
-      --color-text-tertiary: hsl(var(--gray-40));
-      --color-text-quaternary: hsl(var(--gray-30));
-      --color-text-placeholder: hsl(var(--gray-30));
-
-
-      /* Background Colors Dark Theme */
-      --color-bg-primary: hsl(215 25% 10%);
-      --color-bg-secondary: hsl(var(--gray-10));
-      --color-bg-tertiary: hsl(var(--gray-15));
-      --color-bg-muted: hsl(var(--gray-30));
+    /* Background Colors Dark Theme */
+    --color-bg-primary: hsl(215 25% 10%);
+    --color-bg-secondary: hsl(var(--gray-10));
+    --color-bg-tertiary: hsl(var(--gray-15));
+    --color-bg-muted: hsl(var(--gray-30));
       
       /* Table specific backgrounds dark theme */
       --color-table-header: hsl(var(--gray-15));
