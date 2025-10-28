@@ -29,6 +29,7 @@ Rails.application.configure do
 
   # Allow requests from Render.com domain
   config.hosts << "gamerthor.onrender.com"
+  config.hosts << ".onrender.com"
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true

@@ -26,5 +26,8 @@ module Gamerthor
     
     # SECRET_KEY_BASE will be read from environment variables
     config.secret_key_base = ENV['SECRET_KEY_BASE']
+    
+    # Allow Render.com domains in all environments
+    config.hosts << ".onrender.com"
   end
 end
