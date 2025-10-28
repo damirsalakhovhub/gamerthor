@@ -2,7 +2,7 @@ services:
   - type: web
     name: gamerthor
     env: ruby
-    buildCommand: bundle install && bundle exec rails assets:precompile
+    buildCommand: bundle install && bundle exec rails assets:precompile && bundle exec rails db:migrate
     startCommand: bundle exec rails server -p $PORT
     envVars:
       - key: RAILS_ENV
