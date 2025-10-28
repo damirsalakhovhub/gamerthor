@@ -240,7 +240,7 @@
 
   /* DARK THEME ------------------------------------------------------------ */
 
-  @media (prefers-color-scheme: dark) {
+  [data-theme="dark"] {
     :root {
 
       /* Text Colors Dark Theme */
@@ -252,7 +252,7 @@
 
 
       /* Background Colors Dark Theme */
-      --color-bg-primary: hsl(var(--gray-7));
+      --color-bg-primary: hsl(215 25% 10%);
       --color-bg-secondary: hsl(var(--gray-10));
       --color-bg-tertiary: hsl(var(--gray-15));
       --color-bg-muted: hsl(var(--gray-30));

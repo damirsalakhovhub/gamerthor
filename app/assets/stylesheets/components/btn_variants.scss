@@ -2,11 +2,11 @@
 
 /* Default - серая кнопка */
 .btn-default {
-  background-color: var(--color-btn-default-bg);
+  background-color: hsl(215 25% 15%);
   color: var(--color-btn-default-text);
 
   &:hover:not(:disabled) {
-    background-color: var(--color-btn-default-bg-hover);
+    background-color: hsl(215 25% 20%);
   }
 }
 
