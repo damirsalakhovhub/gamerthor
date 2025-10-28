@@ -1,0 +1,52 @@
+<%# app/views/shared/_country_settings_dialog.html.erb %>
+<%# Диалог выбора региона/языка/валюты. Рендерится в конце <body>. %>
+<div
+  id="country-settings"
+  class="anchored-dialog"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="country-settings-title"
+  hidden
+  tabindex="-1"
+>
+  <form class="form" data-turbo="false">
+    <%= render 'shared/forms/select_with_label',
+      label_text: 'Region',
+      input_id: 'region-select',
+      input_name: 'region',
+      options: [
+        { value: 'spain', text: '🇪🇸 Spain', selected: true },
+        { value: 'usa', text: '🇺🇸 United States' },
+        { value: 'uk', text: '🇬🇧 United Kingdom' }
+      ] %>
+
+    <%= render 'shared/forms/select_with_label',
+      label_text: 'Language',
+      input_id: 'language-select',
+      input_name: 'language',
+      options: [
+        { value: 'en', text: 'English', selected: true },
+        { value: 'es', text: 'Spanish' },
+        { value: 'fr', text: 'French' }
+      ] %>
+
+    <%= render 'shared/forms/select_with_label',
+      label_text: 'Currency',
+      input_id: 'currency-select',
+      input_name: 'currency',
+      options: [
+        { value: 'eur', text: 'EUR', selected: true },
+        { value: 'usd', text: 'USD' },
+        { value: 'gbp', text: 'GBP' }
+      ] %>
+
+    <div class="anchored-dialog__actions">
+      <button type="button" class="btn btn-md btn-default" data-action="click->anchored-dialog#close">
+        Cancel
+      </button>
+      <button type="submit" class="btn btn-md btn-primary">
+        Save
+      </button>
+    </div>
+  </form>
+</div>

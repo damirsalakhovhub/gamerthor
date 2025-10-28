@@ -1,0 +1,30 @@
+/* app/assets/stylesheets/components/_anchored_dialog.scss */
+/* Базовая панель: фиксированная, поверх всего, с тенью и адаптивной шириной. */
+.anchored-dialog {
+  position: fixed;
+  inset: auto auto auto auto;
+  z-index: var(--z-modal);
+  display: block;
+  min-width: 20rem;
+  max-width: clamp(18rem, 40vw, 28rem);
+  border-radius: var(--radius-2xl);
+  background: var(--color-bg-block);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: var(--size-2xl);
+  padding-top: var(--size-md);
+  outline: none;
+
+  /* Скрытие через hidden для A11y (JS добавляет/снимает атрибут) */
+  &[hidden] {
+    display: none !important;
+  }
+
+  /* Кнопки действий внизу */
+  &__actions {
+    display: flex;
+    gap: var(--size-sm);
+    justify-content: flex-end;
+    margin-top: var(--size-lg);
+  }
+}
+
