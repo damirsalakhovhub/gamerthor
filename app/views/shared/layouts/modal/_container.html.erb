@@ -1,0 +1,11 @@
+<!-- Модальный контейнер -->
+<div class="modal-overlay" id="<%= modal_id %>">
+  <div class="modal-window">
+    <%= render 'shared/components/modal_close_button', modal_id: modal_id %>
+    <div class="form-content">
+      <%= render header_partial %>
+      <%= render body_partial %>
+      <%= render footer_partial, modal_id: modal_id %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="user-profile">
+  <div class="user-header">
+    <h2>User Profile</h2>
+    <%= link_to "Logout", logout_path %>
+  </div>
+  
+  <div class="user-info">
+    <div class="info-group">
+      <label class="info-label">First Name:</label>
+      <span class="info-value"><%= @user.first_name %></span>
+    </div>
+    
+    <div class="info-group">
+      <label class="info-label">Last Name:</label>
+      <span class="info-value"><%= @user.last_name %></span>
+    </div>
+    
+    <div class="info-group">
+      <label class="info-label">Age:</label>
+      <span class="info-value"><%= @user.age %></span>
+    </div>
+    
+    <div class="info-group">
+      <label class="info-label">City:</label>
+      <span class="info-value"><%= @user.city %></span>
+    </div>
+    
+    <div class="info-group">
+      <label class="info-label">Registration Date:</label>
+      <span class="info-value"><%= @user.created_at.strftime("%d.%m.%Y %H:%M") %></span>
+    </div>
+  </div>
+</div>

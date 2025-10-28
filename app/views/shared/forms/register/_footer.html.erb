@@ -1,0 +1,11 @@
+<!-- Registration form footer -->
+<div class="form-footer <%= 'form-footer--block' unless modal_id %>">
+  <% if modal_id %>
+    <button class="btn btn-md btn-outline" onclick="closeModal('<%= modal_id %>')">
+      <span class="btn-text">Close</span>
+    </button>
+  <% end %>
+  <button class="btn btn-md btn-primary" onclick="submitRegistrationForm()">
+    <span class="btn-text">Register</span>
+  </button>
+</div>

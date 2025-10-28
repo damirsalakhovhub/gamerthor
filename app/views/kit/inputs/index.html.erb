@@ -1,0 +1,82 @@
+<%= render 'shared/page_header', title: 'Inputs' %>
+
+<%
+  # Размеры инпутов
+  sizes = [
+    { class: 'md', name: 'Medium' },
+    { class: 'lg', name: 'Large' }
+  ]
+  
+  # Состояния инпутов
+  states = [
+    { name: 'default', placeholder: 'Default', attributes: '' },
+    { name: 'focused', placeholder: 'Focused', attributes: 'autofocus' },
+    { name: 'disabled', placeholder: 'Disabled', attributes: 'disabled' }
+  ]
+  
+  # Типы инпутов
+  types = ['outline']
+  
+  # Варианты полей
+  field_variants = [
+    { name: 'basic', label: 'Basic Field', placeholder: 'Enter value', required: false, message: nil, message_class: nil, input_class: nil },
+    { name: 'required', label: 'Required Field', placeholder: 'Enter required value', required: true, message: nil, message_class: nil, input_class: nil },
+    { name: 'help', label: 'Field with Help', placeholder: 'Enter your email', required: false, message: 'We\'ll never share your email with anyone else.', message_class: 'form-message-help', input_class: nil },
+    { name: 'error', label: 'Field with Error', placeholder: 'Enter your password', required: false, message: 'Password must be at least 8 characters long.', message_class: 'form-message-error', input_class: 'input-error' }
+  ]
+%>
+
+<%# Внешний цикл: перебираем размеры инпутов %>
+<% sizes.each do |size| %>
+  <div class="section-row">
+    <div class="section-title">
+      <h3 class="text-secondary"><%= size[:name] %> Inputs</h3>
+    </div>
+    
+    <div class="section-content">
+      <%# Вложенный цикл: перебираем типы инпутов %>
+      <% types.each do |type| %>
+        <div class="input-type-group">
+          <h5 class="text-secondary"><%= type.capitalize %></h5>
+          <div class="form">
+            <%# Третий уровень: перебираем состояния %>
+            <% states.each do |state| %>
+              <div class="form-group">
+                <input type="text" class="input input-<%= type %> input-<%= size[:class] %>" 
+                       placeholder="<%= state[:placeholder] %> <%= size[:name] %>" 
+                       <%= state[:attributes] %>>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<%# Секция с вариантами полей %>
+<div class="section-row">
+  <div class="section-title">
+    <h3 class="text-secondary">Field Variants</h3>
+  </div>
+  
+  <div class="section-content">
+    <div class="input-type-group">
+      <h5 class="text-secondary">Form Fields</h5>
+      <div class="form">
+        <% field_variants.each do |variant| %>
+          <div class="form-group">
+            <label class="form-label <%= 'form-label-required' if variant[:required] %>"><%= variant[:label] %></label>
+            <input type="text" class="input input-outline input-lg <%= variant[:input_class] %>" 
+                   placeholder="<%= variant[:placeholder] %>">
+            <% if variant[:message] %>
+              <div class="form-message <%= variant[:message_class] %>">
+                <%= variant[:message] %>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

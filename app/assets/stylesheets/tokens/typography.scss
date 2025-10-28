@@ -1,0 +1,34 @@
+:root {
+  /* Типографические токены */
+  
+  /* Font Sizes */
+  --font-size-3xs: 0.5rem; /* 8px */
+  --font-size-2xs: 0.625rem; /* 10px */
+  --font-size-xs: 0.75rem;  /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-5xl: 3rem; /* 48px */
+  --font-size-6xl: 4rem; /* 64px */
+  --font-size-7xl: 5rem; /* 80px */
+  --font-size-8xl: 6rem; /* 96px */
+  
+  /* Line Heights */
+  --line-height-tight: 1.2; /* 120% */
+  --line-height-normal: 1.5; /* 150% */
+  --line-height-relaxed: 1.75; /* 175% */
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em; 
+  --letter-spacing-normal: -0.01em; 
+  --letter-spacing-loose: 0.01em;
+  --letter-spacing-x-loose: 0.05em; 
+  
+  /* Font Families */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}

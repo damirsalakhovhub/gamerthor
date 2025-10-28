@@ -1,0 +1,133 @@
+/* Базовые стили кнопок */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), transform var(--transition), border-color var(--transition);
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-btn-primary-bg);
+    outline-offset: 0px;
+  }
+
+      &:disabled {
+        background-color: var(--color-btn-disabled-bg);
+        color: var(--color-btn-disabled-text);
+        cursor: not-allowed;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        opacity: .8;
+
+        /* Блокируем hover для disabled */
+        &:hover {
+          background-color: var(--color-btn-disabled-bg);
+          color: var(--color-btn-disabled-text);
+        }
+      }
+
+}
+
+/* Стили для иконок в кнопках */
+.btn-icon {
+  flex-shrink: 0;
+  display: block;
+  stroke: currentColor;
+  color: currentColor;
+  opacity: .9;
+}
+
+
+/* Размеры кнопок */
+.btn-sm {
+  font-size: var(--font-size-sm);
+  line-height: var(--size-element-sm-line-height);
+  border-radius: var(--size-element-sm-border-radius);
+  padding: var(--size-element-sm-padding-y) var(--size-element-sm-padding-x);
+  gap: var(--size-element-sm-gap);
+
+  .btn-text {
+    padding: 0 var(--size-element-sm-text-padding);
+  }
+
+  .btn-icon {
+    width: var(--size-element-sm-icon);
+    height: var(--size-element-sm-icon);
+  }
+
+  &.btn-icon-only {
+    padding: var(--size-element-sm-padding-y); 
+  }
+}
+
+.btn-md {
+  font-size: var(--font-size-md);
+  line-height: var(--size-element-md-line-height);
+  border-radius: var(--size-element-md-border-radius);
+  padding: var(--size-element-md-padding-y) var(--size-element-md-padding-x);
+  gap: var(--size-element-md-gap);
+
+  .btn-text {
+    padding: 0 var(--size-element-md-text-padding);
+  }
+  
+  .btn-icon {
+    width: var(--size-element-md-icon);
+    height: var(--size-element-md-icon);
+  }
+
+  &.btn-icon-only {
+    padding: var(--size-element-md-padding-y); 
+  }
+}
+
+
+
+.btn-lg {
+  font-size: var(--font-size-lg);
+  line-height: var(--size-element-lg-line-height);
+  border-radius: var(--size-element-lg-border-radius);
+  padding: var(--size-element-lg-padding-y) var(--size-element-lg-padding-x);
+  gap: var(--size-element-lg-gap);
+
+  .btn-text {
+    padding: 0 var(--size-element-lg-text-padding);
+  }
+  
+  .btn-icon {
+    width: var(--size-element-lg-icon);
+    height: var(--size-element-lg-icon);
+  }
+
+  &.btn-icon-only {
+    padding: var(--size-element-lg-padding-y);
+  }
+}
+
+
+/* Группа кнопок */
+.btn-group {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Округлые кнопки */
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.btn-rounded.btn-icon-only {
+  border-radius: 50%;
+}
+

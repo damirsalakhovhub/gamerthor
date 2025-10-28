@@ -1,0 +1,67 @@
+<%= render 'shared/page_header', title: 'Forms' %>
+
+<%
+  # Состояния для всех элементов форм
+  states = [
+    { name: 'checked', label: 'Default checked', attributes: 'checked' },
+    { name: 'unchecked', label: 'Default unchecked', attributes: '' },
+    { name: 'disabled_unchecked', label: 'Disabled unchecked', attributes: 'disabled' },
+    { name: 'disabled_checked', label: 'Disabled checked', attributes: 'checked disabled' }
+  ]
+  
+  # Радио кнопки (отдельная логика)
+  radio_states = [
+    { name: 'selected', label: 'Option 1 (selected)', attributes: 'checked' },
+    { name: 'unselected', label: 'Option 2', attributes: '' },
+    { name: 'third', label: 'Option 3', attributes: '' },
+    { name: 'disabled', label: 'Disabled option', attributes: 'disabled' }
+  ]
+%>
+
+<div class="forms-demo">
+  <!-- Checkboxes -->
+  <div class="form-section">
+    <h3 class="text-secondary">Checkboxes</h3>
+    
+    <% states.each do |state| %>
+      <div class="form-group">
+        <label class="checkbox">
+          <input type="checkbox" <%= state[:attributes] %>>
+          <span class="checkbox-mark"></span>
+          <span class="checkbox-label"><%= state[:label] %></span>
+        </label>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- Radio Buttons -->
+  <div class="form-section">
+    <h3 class="text-secondary">Radio Buttons</h3>
+    
+    <% radio_states.each_with_index do |state, index| %>
+      <div class="form-group">
+        <label class="radio">
+          <input type="radio" name="radio-group" value="option<%= index + 1 %>" <%= state[:attributes] %>>
+          <span class="radio-mark"></span>
+          <span class="radio-label"><%= state[:label] %></span>
+        </label>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- Switches -->
+  <div class="form-section">
+    <h3 class="text-secondary">Switches</h3>
+    
+    <% states.each do |state| %>
+      <div class="form-group">
+        <label class="switch">
+          <input type="checkbox" <%= state[:attributes] %>>
+          <span class="switch-track"></span>
+          <span class="switch-label"><%= state[:label] %></span>
+        </label>
+      </div>
+    <% end %>
+  </div>
+
+</div>

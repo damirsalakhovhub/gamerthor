@@ -1,0 +1,54 @@
+/* App layout styles - без сайдбара */
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border-light);
+  padding: var(--size-lg) var(--size-7xl);
+}
+
+.app-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  h1 {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-primary);
+  }
+}
+
+.app-nav {
+  display: flex;
+  gap: var(--size-lg);
+  
+  .app-nav-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    padding: var(--size-xs) var(--size-sm);
+    border-radius: var(--radius-md);
+    transition: all var(--transition);
+    
+    &:hover {
+      color: var(--color-text-primary);
+      background: var(--color-bg-secondary);
+    }
+  }
+}
+
+.app-main {
+  flex: 1;
+  padding: var(--size-7xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}

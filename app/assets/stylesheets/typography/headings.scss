@@ -1,0 +1,40 @@
+@layer typography {
+  /* Базовые стили для заголовков */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: var(--line-height-tight);
+    margin-top: 1.75em;
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+    
+    letter-spacing: var(--letter-spacing-normal);
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  h3 {
+    font-size: var(--font-size-lg);
+  }
+
+  h4 {
+    font-size: var(--font-size-md);
+  }
+
+  h5 {
+    font-size: var(--font-size-sm);
+  }
+
+  h6 {
+    font-size: var(--font-size-xs);
+  }
+
+  /* Обнуляем отступы у первого элемента */
+  :first-child {
+    margin-top: 0;
+  }
+}

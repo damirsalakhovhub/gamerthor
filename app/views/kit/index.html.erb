@@ -1,0 +1,26 @@
+<%= render 'shared/page_header', title: 'UI Kit Overview' %>
+
+<div class="kit-overview">
+  <h2>Component Library</h2>
+  <p>Добро пожаловать в UI Kit! Здесь собраны все компоненты дизайн-системы.</p>
+  
+  <div class="kit-grid">
+    <div class="kit-card">
+      <h3>Buttons</h3>
+      <p>Кнопки различных размеров и стилей</p>
+      <%= link_to "Посмотреть", kit_buttons_path, class: "btn btn-md btn-primary" %>
+    </div>
+    
+    <div class="kit-card">
+      <h3>Forms</h3>
+      <p>Элементы форм: инпуты, селекты, чекбоксы</p>
+      <%= link_to "Посмотреть", kit_forms_path, class: "btn btn-md btn-primary" %>
+    </div>
+    
+    <div class="kit-card">
+      <h3>Modals</h3>
+      <p>Модальные окна и блоки</p>
+      <%= link_to "Посмотреть", kit_modals_path, class: "btn btn-md btn-primary" %>
+    </div>
+  </div>
+</div>

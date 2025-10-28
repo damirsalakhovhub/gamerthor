@@ -1,0 +1,116 @@
+/* Базовые стили инпутов */
+.input {
+  display: block;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  font-family: inherit;
+  cursor: text;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+  background-color: transparent;
+  color: var(--color-text-primary);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--color-element-focus-border);
+    outline-offset: 0px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-color: var(--color-input-disabled-bg);
+    color: var(--color-input-disabled-text);
+  }
+
+  // Более специфичный селектор для перебития reset'а
+  &.input::placeholder {
+    color: var(--color-text-placeholder);
+  }
+
+  &:focus::placeholder {
+    opacity: 0.5;
+  }
+  
+}
+
+
+
+
+/* Размеры инпутов */
+.input-md {
+  font-size: var(--size-element-md-font);
+  line-height: var(--size-element-md-line-height);
+  border-radius: var(--size-element-md-border-radius);
+  padding: var(--size-element-md-padding-y) var(--size-element-md-padding-x);
+}
+
+.input-lg {
+  font-size: var(--size-element-lg-font);
+  line-height: var(--size-element-lg-line-height);
+  border-radius: var(--size-element-lg-border-radius);
+  padding: var(--size-element-lg-padding-y) var(--size-element-lg-padding-x);
+}
+
+/* Варианты инпутов */
+
+/* Outline - инпут с обводкой */
+.input-outline {
+  background-color: var(--color-input-outline-bg);
+  color: var(--color-input-outline-text);
+  box-shadow: inset 0 0 0 1px var(--color-input-outline-border);
+  transition: box-shadow var(--transition);
+
+  &:hover:not(:disabled) {
+    box-shadow: inset 0 0 0 1px var(--color-input-outline-border-hover);
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 1px var(--color-input-outline-border-focus);
+  }
+}
+
+/* Обязательные поля */
+.form-label-required {
+  position: relative;
+  
+  &::after {
+    content: '*';
+    color: var(--color-error);
+    margin-left: 4px;
+    font-weight: 500;
+  }
+}
+
+/* Состояния полей с ошибками */
+.input-error {
+  box-shadow: inset 0 0 0 1px var(--color-error) !important;
+  
+  &:focus {
+    box-shadow: inset 0 0 0 1px var(--color-error) !important;
+  }
+}
+
+/* Сообщения под полями */
+.form-message {
+  font-size: 0.875rem;
+  margin-top: 4px;
+  line-height: 1.4;
+  
+  &.form-message-help {
+    color: var(--color-text-secondary);
+  }
+  
+  &.form-message-error {
+    color: var(--color-error);
+  }
+}

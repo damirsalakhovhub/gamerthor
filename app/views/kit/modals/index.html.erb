@@ -1,0 +1,67 @@
+<%= render 'shared/page_header', title: 'Modals' %>
+
+<div class="modal-demo">
+  <button class="btn btn-md btn-primary" onclick="openModal('registrationModal')">
+    <span class="btn-text">Registration</span>
+  </button>
+  
+  <button class="btn btn-md btn-outline" onclick="openModal('loginModal')">
+    <span class="btn-text">Login</span>
+  </button>
+</div>
+
+<!-- Статичные модальные окна для демонстрации стилей -->
+<div class="forms-demo">
+  <div class="form-section">
+    <h3>Login Block</h3>
+    <%= render 'shared/layouts/block/container',
+        header_partial: 'shared/forms/login/header',
+        body_partial: 'shared/forms/login/body',
+        footer_partial: 'shared/forms/login/footer' %>
+  </div>
+  
+  <div class="form-section">
+    <h3>Registration Block</h3>
+    <%= render 'shared/layouts/block/container',
+        header_partial: 'shared/forms/register/header',
+        body_partial: 'shared/forms/register/body',
+        footer_partial: 'shared/forms/register/footer' %>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<%= render 'shared/layouts/modal/container',
+    modal_id: 'loginModal',
+    header_partial: 'shared/forms/login/header',
+    body_partial: 'shared/forms/login/body',
+    footer_partial: 'shared/forms/login/footer' %>
+
+<!-- Registration Modal -->
+<%= render 'shared/layouts/modal/container',
+    modal_id: 'registrationModal',
+    header_partial: 'shared/forms/register/header',
+    body_partial: 'shared/forms/register/body',
+    footer_partial: 'shared/forms/register/footer' %>
+
+<script>
+  function openModal(modalId) {
+    document.getElementById(modalId).classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeModal(modalId) {
+    document.getElementById(modalId).classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  
+  // Close modal on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      // Close any open modal
+      const openModals = document.querySelectorAll('.modal.is-open');
+      openModals.forEach(modal => {
+        closeModal(modal.id);
+      });
+    }
+  });
+</script>

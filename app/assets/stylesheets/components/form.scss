@@ -1,0 +1,158 @@
+
+/* 
+ * .form - универсальный класс для всех форм
+ * 
+ * ИСПОЛЬЗОВАНИЕ:
+ * - Применяется к тегу <form> или любому контейнеру с формами
+ * - Управляет отступами между группами полей
+ * - Заменяет специфичные классы типа .modal-form
+ * 
+ * СТРУКТУРА:
+ * <form class="form">
+ *   <div class="form-group">...</div>
+ *   <div class="form-group">...</div>
+ * </form>
+ */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2xl); /* Отступ между группами полей */
+}
+
+/* 
+ * .form-group - контейнер для пары лейбл + элемент формы
+ * 
+ * ИСПОЛЬЗОВАНИЕ:
+ * - Обязательный контейнер для всех форм
+ * - Создает вертикальную компоновку (лейбл сверху, элемент снизу)
+ * - Обеспечивает минимальный отступ между лейблом и элементом
+ * - Необходим для работы ховер-эффектов между лейблом и элементом
+ * 
+ * СТРУКТУРА:
+ * <div class="form-group">
+ *   <label class="form-label" for="elementId">Label Text</label>
+ *   <input class="input" id="elementId" type="text">
+ * </div>
+ */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* обнуляем чтобы ховер не дергался */  
+}
+
+/* 
+ * .form-label - стилизованный лейбл для элементов форм
+ * 
+ * ИСПОЛЬЗОВАНИЕ:
+ * - Всегда используется с атрибутом for="elementId"
+ * - Связан с элементом формы через id
+ * - Клик по лейблу фокусирует связанный элемент
+ * - Поддерживает ховер-эффекты для улучшения UX
+ * 
+ * ОСОБЕННОСТИ:
+ * - cursor: pointer - показывает, что лейбл кликабельный
+ * - line-height: 1.2 - плотное прилегание к элементу (убирает "проваливание" ховера)
+ * - margin: 0 - убирает стандартные отступы браузера
+ */
+.form-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+  line-height: 2;
+  cursor: pointer;
+  
+  /* Ховер на лейбл - подсвечивает лейбл */
+  &:hover {
+    color: var(--color-text-primary);
+  }
+}
+
+/* 
+ * ХОВЕР-ЭФФЕКТЫ МЕЖДУ ЛЕЙБЛОМ И ЭЛЕМЕНТОМ
+ * 
+ * Два подхода для максимальной совместимости:
+ * 1. Fallback через + селектор (работает везде)
+ * 2. Современный :has() селектор (лучшая поддержка)
+ */
+
+/* Fallback для старых браузеров - ховер на элемент влияет на лейбл */
+.form-group {
+  .input:hover + .form-label,
+  .input:focus + .form-label,
+  .select:hover + .form-label,
+  .select:focus + .form-label {
+    color: var(--color-text-primary);
+  }
+  
+  /* Ховер на лейбл влияет на элемент */
+  .form-label:hover + .input,
+  .form-label:hover + .select {
+    border-color: var(--color-primary);
+  }
+  
+  /* 
+   * Современный способ через :has() - более надежный
+   * 
+   * ПРЕИМУЩЕСТВА:
+   * - Работает независимо от порядка элементов в DOM
+   * - Поддерживает сложные селекторы
+   * - Лучшая производительность
+   * 
+   * ПОДДЕРЖКА:
+   * - Chrome 105+, Firefox 103+, Safari 15.4+
+   * - Не поддерживается в старых браузерах (fallback выше)
+   */
+  &:has(.input:hover) .form-label,
+  &:has(.input:focus) .form-label,
+  &:has(.select:hover) .form-label,
+  &:has(.select:focus) .form-label {
+    color: var(--color-text-primary);
+  }
+  
+  &:has(.form-label:hover) .input,
+  &:has(.form-label:hover) .select {
+    border-color: var(--color-primary);
+  }
+}
+
+/* Универсальный контент форм */
+.form-content {
+  // padding: var(--size-7xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4xl);
+}
+
+/* Футер формы */
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--size-xs);
+  
+  /* Модификатор для блочного контекста */
+  &--block {
+    justify-content: flex-start;
+  }
+}
+
+/* Блочный контейнер для демонстрации форм */
+.form-block {
+  position: relative;
+  background: transparent;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  width: 50%;
+  min-width: 350px;
+  max-width: 500px;
+  margin: 0 auto;
+  
+  .form-content {
+    transform: scale(1);
+    box-shadow: none;
+    border: none;
+    position: static;
+  }
+}

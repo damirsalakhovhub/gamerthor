@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UI Kit - Component Library</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>UI Kit</h2>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/kit" class="nav-link">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a href="/kit/buttons" class="nav-link">Buttons</a>
+            </li>
+            <li class="nav-item">
+              <a href="/kit/selects" class="nav-link">Selects</a>
+            </li>
+            <li class="nav-item">
+              <a href="/kit/inputs" class="nav-link">Inputs</a>
+            </li>
+            <li class="nav-item">
+              <a href="/kit/modals" class="nav-link">Modals</a>
+            </li>
+            <li class="nav-item">
+              <a href="/kit/forms" class="nav-link">Forms</a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link">← Back to App</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      
+      <main class="main-content">
+        <%= yield %>
+      </main>
+    </div>
+  </body>
+</html>

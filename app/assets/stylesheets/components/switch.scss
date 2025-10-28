@@ -1,0 +1,119 @@
+/* Базовые стили свитчей */
+.switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  /* Скрываем нативный чекбокс */
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+/* Кастомный свитч */
+  .switch-track {
+    position: relative;
+    width: var(--size-8xl); /* 36px */
+    height: var(--size-xl); /* 20px */
+    background-color: var(--color-switch-track-off);
+    border-radius: var(--size-xl);
+    transition: background-color 100ms linear;
+    flex-shrink: 0;
+
+    /* Переключатель */
+    &::after {
+      content: '';
+      position: absolute;
+      left: var(--size-8xs); /* 2px */
+      top: var(--size-8xs); /* 2px */
+      width: var(--size-md); /* 16px */
+      height: var(--size-md); /* 16px */
+      background-color: var(--color-switch-thumb);
+      border-radius: 50%;
+      transition: transform 300ms cubic-bezier(0, 1.2, 0.5, 1.2);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+    
+    
+/* Лейбл */
+  .switch-label {
+    font-size: var(--font-size-md);
+    color: var(--color-text-primary);
+    margin-left: var(--size-3xs);
+    line-height: 1.5;
+  }
+
+/* Состояния */
+
+  /* Hover */
+  &:hover:not(:disabled) .switch-track {
+    background-color: var(--color-switch-track-hover);
+  }
+
+  /* Checked */
+  input:checked + .switch-track {
+    background-color: var(--color-switch-track-on);
+  }
+
+  /* checked + hover */
+  input:checked:hover + .switch-track {
+    background-color: var(--color-switch-track-on-hover);
+  }
+
+  /* Checked + After */
+  input:checked + .switch-track::after {
+    transform: translateX(var(--size-md)); /* 16px */
+  }
+
+  /* Focus */
+  input:focus + .switch-track {
+    outline: 2px solid var(--color-element-focus-border);
+    outline-offset: 2px;
+  }
+
+
+
+
+  /* Disabled состояние */
+  input:disabled + .switch-track {
+    background-color: var(--color-switch-disabled-track);
+  }
+
+  input:disabled + .switch-track::after {
+    background-color: var(--color-switch-disabled-thumb);
+  }
+
+  input:disabled:checked + .switch-track {
+    background-color: var(--color-switch-disabled-track);
+  }
+
+  input:disabled ~ .switch-label {
+    color: var(--color-switch-disabled-label);
+  }
+
+  input:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  input:disabled + .switch-track {
+    cursor: not-allowed;
+  }
+
+  input:disabled ~ .switch-label {
+    cursor: not-allowed;
+  }
+
+  /* Блокируем hover для disabled */
+  input:disabled:hover + .switch-track {
+    background-color: var(--color-switch-disabled-track);
+  }
+}

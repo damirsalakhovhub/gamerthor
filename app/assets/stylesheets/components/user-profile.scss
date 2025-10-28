@@ -1,0 +1,62 @@
+/* User Profile Styles */
+
+.user-profile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--size-6xl);
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--size-6xl);
+  
+  h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+}
+
+.user-info {
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-xl);
+  padding: var(--size-6xl);
+  border: 1px solid var(--color-border-light);
+}
+
+.info-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size-lg) 0;
+  border-bottom: 1px solid var(--color-border-light);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.info-label {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+}
+
+.info-value {
+  font-weight: 500;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+}
+
+.form-toggle {
+  margin-top: var(--size-4xl);
+  text-align: center;
+  
+  p {
+    margin: 0;
+    color: var(--color-text-secondary);
+  }
+}

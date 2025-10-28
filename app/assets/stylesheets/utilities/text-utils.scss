@@ -1,0 +1,18 @@
+@layer utilities {
+  /* Text color utilities */
+  .text-primary {
+    color: var(--color-text-primary);
+  }
+  
+  .text-secondary {
+    color: var(--color-text-secondary);
+  }
+  
+  .text-muted {
+    color: var(--color-text-muted);
+  }
+  
+  .text-accent {
+    color: var(--color-text-accent);
+  }
+}

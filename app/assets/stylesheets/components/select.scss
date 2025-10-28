@@ -1,0 +1,87 @@
+/* Базовые стили селектов */
+.select {
+  display: block;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+  background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="%23333"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 18px;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-element-focus-border);
+    outline-offset: 0px;
+  }
+
+  &:disabled {
+    opacity: .8;
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-color: var(--color-select-disabled-bg);
+    color: var(--color-select-disabled-text);
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="%23999999"/></svg>');
+  }
+}
+
+
+/* Размеры селектов */
+.select-md {
+  font-size: var(--size-element-md-font);
+  line-height: var(--size-element-md-line-height);
+  border-radius: var(--size-element-md-border-radius);
+  padding: var(--size-element-md-padding-y) 30px var(--size-element-md-padding-y) 10px;
+}
+
+.select-lg {
+  font-size: var(--size-element-lg-font);
+  line-height: var(--size-element-lg-line-height);
+  border-radius: var(--size-element-lg-border-radius);
+  padding: var(--size-element-lg-padding-y) 35px var(--size-element-lg-padding-y) 14px;
+}
+
+
+/* Варианты селектов */
+
+/* Default - серый селект */
+.select-default {
+  background-color: var(--color-select-default-bg);
+  color: var(--color-select-default-text);
+
+  &:hover:not(:disabled) {
+    background-color: var(--color-select-default-bg-hover);
+  }
+}
+
+/* Outline - селект с обводкой */
+.select-outline {
+  background-color: var(--color-select-outline-bg);
+  color: var(--color-select-outline-text);
+  box-shadow: inset 0 0 0 1px var(--color-select-outline-border);
+
+  &:hover:not(:disabled) {
+    box-shadow: inset 0 0 0 1px var(--color-select-outline-border-hover);
+    color: var(--color-select-outline-text-hover);
+  }
+}
+
+/* Темная тема для стрелки */
+@media (prefers-color-scheme: dark) {
+  .select {
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="%23ccc"/></svg>');
+  }
+  
+  .select:disabled {
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="%23666"/></svg>');
+  }
+}

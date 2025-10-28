@@ -1,0 +1,79 @@
+
+<div class="users-list">
+  <div class="users-header">
+    <h2>Registered Users</h2>
+    <button class="btn btn-md btn-primary" onclick="openModal('registrationModal')">
+      <span class="btn-text">Add User</span>
+    </button>
+  </div>
+  
+  <% if @users.any? %>
+    <div class="users-table">
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Registration Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @users.each do |user| %>
+            <tr>
+              <td><%= user.first_name %></td>
+              <td><%= user.last_name %></td>
+              <td><%= user.age %></td>
+              <td><%= user.city %></td>
+              <td><%= user.created_at.strftime("%d.%m.%Y %H:%M") %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  <% else %>
+    <div class="empty-state">
+      <p>No users found</p>
+      <button class="btn btn-md btn-primary" onclick="openModal('registrationModal')">
+        <span class="btn-text">Register First User</span>
+      </button>
+    </div>
+  <% end %>
+</div>
+
+<!-- Registration Modal -->
+<%= render 'shared/layouts/modal/container',
+    modal_id: 'registrationModal',
+    header_partial: 'shared/forms/register/header',
+    body_partial: 'shared/forms/register/body',
+    footer_partial: 'shared/forms/register/footer' %>
+
+<script>
+  function openModal(modalId) {
+    document.getElementById(modalId).classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeModal(modalId) {
+    document.getElementById(modalId).classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  
+  function submitRegistrationForm() {
+    const form = document.getElementById('registrationForm');
+    if (form) {
+      form.submit();
+    }
+  }
+  
+  // Close modal on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const openModals = document.querySelectorAll('.modal-overlay.is-open');
+      openModals.forEach(modal => {
+        closeModal(modal.id);
+      });
+    }
+  });
+</script>

@@ -1,0 +1,63 @@
+/* Стили для страниц пользователей */
+
+.users-list {
+  padding: var(--size-7xl);
+}
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--size-3xl);
+  
+  h2 {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-primary);
+  }
+}
+
+.users-table {
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    th, td {
+      padding: var(--size-md) var(--size-lg);
+      text-align: left;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+    
+    th {
+      background: var(--color-bg-secondary);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      font-size: var(--font-size-sm);
+    }
+    
+    td {
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-md);
+    }
+    
+    tr:hover {
+      background: var(--color-bg-secondary);
+    }
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--size-7xl);
+  color: var(--color-text-secondary);
+  
+  p {
+    margin-bottom: var(--size-lg);
+    font-size: var(--font-size-lg);
+  }
+}

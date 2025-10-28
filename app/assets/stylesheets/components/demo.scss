@@ -1,0 +1,25 @@
+/* Стили для демо-страниц */
+.modal-demo {
+  display: flex;
+  gap: var(--size-3xs);
+  margin-bottom: var(--size-7xl);
+}
+
+.forms-demo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-7xl);
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-md);
+
+  h3 {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+  }
+}

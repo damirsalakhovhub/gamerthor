@@ -1,0 +1,74 @@
+<%= render 'shared/page_header', title: 'Selects' %>
+
+<%
+  # Размеры селектов
+  sizes = [
+    { class: 'md', name: 'Medium' },
+    { class: 'lg', name: 'Large' }
+  ]
+  
+  # Типы селектов (только те, что есть в стилях)
+  types = [
+    { class: 'default', name: 'Default' },
+    { class: 'outline', name: 'Outline' },
+    { class: 'disabled', name: 'Disabled', disabled: true }
+  ]
+  
+  # Типы кнопок для парных вариантов
+  button_types = [
+    { class: 'default', name: 'Default' },
+    { class: 'outline', name: 'Outline' }
+  ]
+%>
+
+<% sizes.each do |size| %>
+  <%= render 'shared/section_header', title: "#{size[:name]} Selects" %>
+  
+  <% types.each do |type| %>
+    <div class="select-group">
+      <h5 class="text-secondary"><%= type[:name] %></h5>
+      <select class="select select-<%= type[:class] %> select-<%= size[:class] %>" <%= 'disabled' if type[:disabled] %>>
+        <option><%= type[:name] %> <%= size[:name] %></option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select>
+    </div>
+  <% end %>
+<% end %>
+
+<%= render 'shared/section_header', title: 'Selects with Labels' %>
+<% sizes.each do |size| %>
+  <div class="select-with-label">
+    <label class="form-label"><%= size[:name] %> Select</label>
+    <select class="select select-default select-<%= size[:class] %>">
+      <option>Select</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+<% end %>
+
+<%= render 'shared/section_header', title: 'Selects with Buttons' %>
+<% sizes.each do |size| %>
+  <% button_types.each do |button_type| %>
+    <div class="select-group">
+      <h5 class="text-secondary"><%= button_type[:name] %></h5>
+      <select class="select select-<%= button_type[:class] %> select-<%= size[:class] %>">
+        <option>Select</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select>
+      <button class="btn btn-<%= button_type[:class] %> btn-<%= size[:class] %>">Button</button>
+    </div>
+  <% end %>
+  
+  <div class="select-group">
+    <h5 class="text-secondary">Disabled</h5>
+    <select class="select select-default select-<%= size[:class] %>" disabled>
+      <option>Select</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+    <button class="btn btn-default btn-<%= size[:class] %>" disabled>Button</button>
+  </div>
+<% end %>

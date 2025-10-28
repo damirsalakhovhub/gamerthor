@@ -1,0 +1,81 @@
+<%= render 'shared/page_header', title: 'Buttons' %>
+
+<%
+  # В ERB можно определять переменные в начале файла
+  # Это массив хешей с размерами кнопок
+  # Каждый хеш содержит :class (CSS класс) и :name (отображаемое имя)
+  sizes = [
+    { class: 'sm', name: 'Small' },
+    { class: 'md', name: 'Medium' },
+    { class: 'lg', name: 'Large' }
+  ]
+  
+  # Простой массив строк с типами кнопок
+  # Эти строки будут использоваться в CSS классах
+  types = ['primary', 'default', 'transparent', 'outline', 'success', 'danger', 'white', 'black']
+  
+  # Массив хешей с вариантами отображения кнопок
+  # :name - CSS класс, :text - текст кнопки, :icon - позиция иконки
+  variants = [
+    { name: 'text-only', text: 'Like', icon: nil },
+    { name: 'icon-left', text: 'Like', icon: 'left' },
+    { name: 'icon-right', text: 'Like', icon: 'right' },
+    { name: 'icon-only', text: nil, icon: 'only' }
+  ]
+
+  # SVG иконка как строка (raw HTML)
+  # raw() в ERB выводит HTML без экранирования
+  icon_svg = '<svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 19.5C12 19.5 21 16.3583 21 10.0746C21 4.83841 14.5 3.79114 12 8.5359C9.5 3.79114 3 4.83837 3 10.0746C3 16.3583 12 19.5 12 19.5Z" stroke-width="2" stroke-linejoin="round"/></svg>'
+%>
+
+<%# Внешний цикл: перебираем размеры кнопок %>
+<%# each - метод Ruby для итерации по массиву %>
+<%# do...end - блок кода для каждой итерации %>
+<% sizes.each do |size| %>
+  <div class="section-row">
+    <div class="section-title">
+      <%# ERB тег для вывода значения %>
+      <%# size[:name] - обращение к ключу :name в хеше %>
+      <h3 class="text-secondary"><%= size[:name] %> Buttons</h3>
+    </div>
+    
+    <div class="section-content">
+
+      <%# Вложенный цикл: перебираем типы кнопок %>
+      <% types.each do |type| %>
+        <div class="btn-type-group">
+
+          <%# type.capitalize - Ruby метод для заглавной буквы %>
+          <h5 class="text-secondary"><%= type.capitalize %></h5>
+          <div class="btn-variants">
+
+            <%# Третий уровень: перебираем варианты отображения %>
+            <% variants.each do |variant| %>
+              <button class="btn btn-<%= type %> btn-<%= size[:class] %> <%= variant[:name] == 'icon-only' ? 'btn-icon-only' : '' %>">
+                
+                <%# Условная логика в ERB %>
+                <%# if...end - проверка условия %>
+                <% if variant[:icon] == 'left' || variant[:icon] == 'only' %>
+                  
+                  <%# raw() - выводит HTML без экранирования %>
+                  <%= raw icon_svg %>
+                <% end %>
+
+                <%# Проверяем наличие текста %>
+                <% if variant[:text] %>
+                  <span class="btn-text"><%= variant[:text] %></span>
+                <% end %>
+
+                <%# Иконка справа %>
+                <% if variant[:icon] == 'right' %>
+                  <%= raw icon_svg %>
+                <% end %>
+              </button>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+

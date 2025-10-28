@@ -1,0 +1,2205 @@
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='V04'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-10-26 04:25:43.191875', '2025-10-26 04:25:43.191875') RETURNING "key" /*application='V04'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='V04'*/[0m
+Migrating to CreateUsers (20251026042538)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='V04'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "age" integer, "city" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='V04'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251026042538') RETURNING "version" /*application='V04'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='V04'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='V04'*/[0m
+Started GET "/users" for ::1 at 2025-10-26 09:30:00 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='V04'*/[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (Duration: 3.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | GC: 0.0ms)
+Completed 200 OK in 47ms (Views: 9.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:30:01 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 6.2ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2025-10-26 09:30:03 +0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:30:12 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"222", "last_name"=>"222222", "age"=>"20", "city"=>"222222222"}, "commit"=>"Регистрация"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('222', '222222', 20, '222222222', '2025-10-26 04:30:12.928568', '2025-10-26 04:30:12.928568') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 25ms (ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:30:12 +0500
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 1.1ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2025-10-26 09:30:38 +0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='V04'*/[0m
+  [1m[36mUser Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" /*application='V04'*/[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='V04'*/[0m
+Started GET "/users" for ::1 at 2025-10-26 09:34:43 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.2ms)
+Completed 200 OK in 23ms (Views: 1.4ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:34:44 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.3ms)
+Completed 200 OK in 21ms (Views: 1.7ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/forms" for ::1 at 2025-10-26 09:34:44 +0500
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered forms/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:34:45 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 1.2ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/forms" for ::1 at 2025-10-26 09:34:46 +0500
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered forms/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/buttons" for ::1 at 2025-10-26 09:36:46 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/buttons"):
+  
+Started GET "/" for ::1 at 2025-10-26 09:36:50 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/app (Duration: 4.1ms | GC: 0.6ms)
+  Rendered layout layouts/app.html.erb (Duration: 9.7ms | GC: 0.9ms)
+Completed 200 OK in 36ms (Views: 9.7ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 2.5ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:36:53 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/app (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.3ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-26 09:36:53 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.9ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-26 09:36:59 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.6ms | GC: 0.1ms)
+Completed 200 OK in 23ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-26 09:36:59 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 23ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-26 09:37:00 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 09:37:01 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.5ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 23ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-26 09:37:02 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.6ms | GC: 0.1ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 2.3ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.6ms | GC: 0.1ms)
+Completed 200 OK in 25ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/forms" for ::1 at 2025-10-26 09:37:06 +0500
+Processing by KitController#forms as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/forms/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/forms/index.html.erb within layouts/kit (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:37:07 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/app (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.5ms | GC: 0.2ms)
+Completed 200 OK in 24ms (Views: 1.5ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2025-10-26 09:37:09 +0500
+Processing by UsersController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/new.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered users/new.html.erb within layouts/app (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:37:20 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"333", "last_name"=>"333333", "age"=>"20", "city"=>"333333333"}, "commit"=>"Регистрация"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('333', '333333', 20, '333333333', '2025-10-26 04:37:20.394094', '2025-10-26 04:37:20.394094') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 25ms (ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:37:20 +0500
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:9
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/app (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 1.1ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:41:25 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:11
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 3.2ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 4.0ms | GC: 0.2ms)
+Completed 200 OK in 24ms (Views: 3.9ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:41:30 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:11
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.5ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:41:32 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:11
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 1.2ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.5ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.5ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:43:08 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered home/index.html.erb within layouts/app (Duration: 2.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 3.1ms | ActiveRecord: 0.4ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:43:18 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"4", "last_name"=>"44", "age"=>"21", "city"=>"444"}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('4', '44', 21, '444', '2025-10-26 04:43:18.741040', '2025-10-26 04:43:18.741040') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:43:18 +0500
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:44:03 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.7ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.4ms | GC: 0.2ms)
+Completed 200 OK in 23ms (Views: 3.2ms | ActiveRecord: 0.5ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:44:10 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"5", "last_name"=>"55", "age"=>"24", "city"=>"555"}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('5', '55', 24, '555', '2025-10-26 04:44:10.230778', '2025-10-26 04:44:10.230778') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 25ms (ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:44:10 +0500
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:11
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.8ms | GC: 0.1ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 2.0ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 2.2ms | GC: 0.1ms)
+Completed 200 OK in 21ms (Views: 2.3ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:45:54 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 4.3ms | GC: 0.3ms)
+  Rendered layout layouts/app.html.erb (Duration: 5.5ms | GC: 0.3ms)
+Completed 200 OK in 24ms (Views: 5.6ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:46:01 +0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"6", "last_name"=>"66", "age"=>"18", "city"=>"666"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('6', '66', 18, '666', '2025-10-26 04:46:01.537290', '2025-10-26 04:46:01.537290') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 25ms (ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:46:01 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.7ms | GC: 0.1ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 1.4ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.6ms | GC: 0.1ms)
+Completed 200 OK in 19ms (Views: 1.6ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:46:07 +0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"7", "last_name"=>"77", "age"=>"", "city"=>""}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('7', '77', NULL, '', '2025-10-26 04:46:07.185421', '2025-10-26 04:46:07.185421') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 25ms (ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:46:07 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.5ms | GC: 0.1ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.7ms | GC: 0.1ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 1.4ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.6ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 1.6ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:46:09 +0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"", "last_name"=>"", "age"=>"", "city"=>""}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('', '', NULL, '', '2025-10-26 04:46:09.800842', '2025-10-26 04:46:09.800842') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 25ms (ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:46:09 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.6ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 1.7ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:46:17 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:47:03 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered home/index.html.erb within layouts/app (Duration: 3.9ms | GC: 1.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 4.8ms | GC: 1.5ms)
+Completed 200 OK in 24ms (Views: 4.6ms | ActiveRecord: 0.4ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:47:22 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.7ms | GC: 0.3ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.4ms | GC: 0.3ms)
+Completed 200 OK in 22ms (Views: 3.3ms | ActiveRecord: 0.4ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:47:39 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"77", "last_name"=>"777", "age"=>"", "city"=>"77777"}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('77', '777', NULL, '77777', '2025-10-26 04:47:39.399280', '2025-10-26 04:47:39.399280') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 24ms (ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:47:39 +0500
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 2.4ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 2.6ms | GC: 0.1ms)
+Completed 200 OK in 21ms (Views: 2.7ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2025-10-26 09:50:26 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 1.3ms | GC: 1.2ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 2.7ms | GC: 1.2ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 5.2ms | GC: 1.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 6.1ms | GC: 1.5ms)
+Completed 200 OK in 32ms (Views: 5.9ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:50:32 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 1.0ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.3ms | GC: 0.2ms)
+Completed 200 OK in 24ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:55:19 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.8ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 2.8ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_new_path' for #<ActionView::Base:0x0000000002fad0>)
+Caused by: NameError (undefined local variable or method `sessions_new_path' for #<ActionView::Base:0x0000000002fad0>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `sessions_new_path' for #<ActionView::Base:0x0000000002fad0>):
+    29:     <% end %>
+    30:     
+    31:     <div class="form-toggle">
+    32:       <p>Already have an account? <%= link_to "Login", sessions_new_path, class: "btn btn-md btn-outline" %></p>
+    33:     </div>
+    34:   </div>
+    35: </div>
+  
+app/views/home/index.html.erb:32
+
+Information for cause: NameError (undefined local variable or method `sessions_new_path' for #<ActionView::Base:0x0000000002fad0>):
+  
+app/views/home/index.html.erb:32
+Started GET "/" for ::1 at 2025-10-26 09:55:50 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 3.2ms | GC: 0.3ms)
+  Rendered layout layouts/app.html.erb (Duration: 4.6ms | GC: 0.4ms)
+Completed 200 OK in 24ms (Views: 4.4ms | ActiveRecord: 0.6ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:55:53 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/sessions" for ::1 at 2025-10-26 09:56:00 +0500
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "first_name"=>"3", "last_name"=>"33", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."first_name" = '3' AND "users"."last_name" = '33' LIMIT 1 /*action='create',application='V04',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:56:00 +0500
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:56:09 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//users" for ::1 at 2025-10-26 09:56:14 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.5ms | GC: 0.5ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 3.3ms | GC: 2.7ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.5ms | GC: 0.4ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 6.7ms | GC: 5.2ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 11.3ms | GC: 8.6ms)
+  Rendered layout layouts/app.html.erb (Duration: 12.0ms | GC: 9.1ms)
+Completed 200 OK in 35ms (Views: 11.4ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 9.8ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:56:20 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 1.0ms | GC: 0.4ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.2ms | GC: 0.4ms)
+Completed 200 OK in 27ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started POST "/sessions" for ::1 at 2025-10-26 09:56:23 +0500
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "first_name"=>"4", "last_name"=>"44", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."first_name" = '4' AND "users"."last_name" = '44' LIMIT 1 /*action='create',application='V04',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 19ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2025-10-26 09:56:23 +0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1 /*action='show',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  Rendering layout layouts/app.html.erb
+  Rendering users/show.html.erb within layouts/app
+  Rendered users/show.html.erb within layouts/app (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/sessions/4" for ::1 at 2025-10-26 09:56:28 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/4"):
+  
+Started GET "/sessions/4" for ::1 at 2025-10-26 09:57:01 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/4"):
+  
+Started GET "/" for ::1 at 2025-10-26 09:57:06 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.9ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.6ms | GC: 0.1ms)
+Completed 200 OK in 26ms (Views: 3.4ms | ActiveRecord: 0.5ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:57:08 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2025-10-26 09:57:12 +0500
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "first_name"=>"4", "last_name"=>"44", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."first_name" = '4' AND "users"."last_name" = '44' LIMIT 1 /*action='create',application='V04',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 19ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/4" for ::1 at 2025-10-26 09:57:12 +0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1 /*action='show',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  Rendering layout layouts/app.html.erb
+  Rendering users/show.html.erb within layouts/app
+  Rendered users/show.html.erb within layouts/app (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/logout" for ::1 at 2025-10-26 09:57:14 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for ::1 at 2025-10-26 09:57:31 +0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:57:31 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 4.7ms | GC: 1.3ms)
+Completed 200 OK in 22ms (Views: 4.6ms | ActiveRecord: 0.5ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:57:36 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.7ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.2ms | GC: 0.2ms)
+Completed 200 OK in 24ms (Views: 3.1ms | ActiveRecord: 0.4ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:57:37 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/sessions" for ::1 at 2025-10-26 09:57:40 +0500
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "first_name"=>"4", "last_name"=>"44", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."first_name" = '4' AND "users"."last_name" = '44' LIMIT 1 /*action='create',application='V04',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 23ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/4" for ::1 at 2025-10-26 09:57:40 +0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1 /*action='show',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  Rendering layout layouts/app.html.erb
+  Rendering users/show.html.erb within layouts/app
+  Rendered users/show.html.erb within layouts/app (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/logout" for ::1 at 2025-10-26 09:57:41 +0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:57:41 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:57:45 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"4", "last_name"=>"44", "age"=>"", "city"=>""}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('4', '44', NULL, '', '2025-10-26 04:57:45.712204', '2025-10-26 04:57:45.712204') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 21ms (ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users/10" for ::1 at 2025-10-26 09:57:45 +0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1 /*action='show',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  Rendering layout layouts/app.html.erb
+  Rendering users/show.html.erb within layouts/app
+  Rendered users/show.html.erb within layouts/app (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/logout" for ::1 at 2025-10-26 09:57:48 +0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:57:48 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:57:50 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//users" for ::1 at 2025-10-26 09:57:50 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 2.9ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//users" for ::1 at 2025-10-26 09:57:52 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 1.9ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 2.1ms | GC: 0.2ms)
+Completed 200 OK in 26ms (Views: 2.1ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 09:58:12 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"7", "last_name"=>"77", "age"=>"", "city"=>"777"}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('7', '77', NULL, '777', '2025-10-26 04:58:13.022435', '2025-10-26 04:58:13.022435') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 25ms (ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users/11" for ::1 at 2025-10-26 09:58:13 +0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1 /*action='show',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  Rendering layout layouts/app.html.erb
+  Rendering users/show.html.erb within layouts/app
+  Rendered users/show.html.erb within layouts/app (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/logout" for ::1 at 2025-10-26 09:58:21 +0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:58:21 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/logout" for ::1 at 2025-10-26 09:58:22 +0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:58:22 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2025-10-26 09:58:46 +0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:58:46 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:58:48 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.1ms)
+Completed 200 OK in 21ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:58:49 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:59:07 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:59:09 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:59:10 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.7ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.2ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:59:14 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:59:25 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//users" for ::1 at 2025-10-26 09:59:26 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.9ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//users" for ::1 at 2025-10-26 09:59:28 +0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering users/index.html.erb within layouts/app
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" LIMIT 1 /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='V04',controller='users'*/[0m
+  ↳ app/views/users/index.html.erb:23
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered users/index.html.erb within layouts/app (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.8ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 09:59:31 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.2ms)
+Completed 200 OK in 25ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-26 09:59:31 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-26 09:59:39 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 25ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 09:59:48 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:00:31 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.6ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.4ms | GC: 0.4ms)
+Completed 200 OK in 22ms (Views: 3.2ms | ActiveRecord: 0.4ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:00:35 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:00:36 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:01:33 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:02:11 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.7ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.4ms | GC: 0.3ms)
+Completed 200 OK in 22ms (Views: 3.3ms | ActiveRecord: 0.4ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:02:12 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 4.2ms | GC: 3.6ms)
+  Rendered layout layouts/app.html.erb (Duration: 8.6ms | GC: 7.2ms)
+Completed 200 OK in 28ms (Views: 9.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:02:14 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 3.7ms | GC: 0.6ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.9ms | GC: 0.6ms)
+Completed 200 OK in 27ms (Views: 3.5ms | ActiveRecord: 0.6ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:02:15 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.3ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:02:18 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.6ms | GC: 0.2ms)
+Completed 200 OK in 21ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:02:28 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.7ms | GC: 0.3ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.4ms | GC: 0.4ms)
+Completed 200 OK in 22ms (Views: 3.3ms | ActiveRecord: 0.5ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:02:29 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:02:30 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:02:32 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.6ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:02:36 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:02:37 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 10:02:38 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"", "last_name"=>"", "age"=>"", "city"=>""}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('', '', NULL, '', '2025-10-26 05:02:38.594218', '2025-10-26 05:02:38.594218') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 25ms (ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users/12" for ::1 at 2025-10-26 10:02:38 +0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 12 LIMIT 1 /*action='show',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  Rendering layout layouts/app.html.erb
+  Rendering users/show.html.erb within layouts/app
+  Rendered users/show.html.erb within layouts/app (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/logout" for ::1 at 2025-10-26 10:02:41 +0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:02:41 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:02:48 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:03:00 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.8ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.5ms | GC: 0.3ms)
+Completed 200 OK in 21ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:03:03 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.2ms)
+Completed 200 OK in 22ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:03:04 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 3.0ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.2ms | GC: 0.1ms)
+Completed 200 OK in 26ms (Views: 3.0ms | ActiveRecord: 0.5ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:03:06 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:03:07 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2025-10-26 10:03:12 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"", "last_name"=>"", "age"=>"", "city"=>""}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('', '', NULL, '', '2025-10-26 05:03:12.929772', '2025-10-26 05:03:12.929772') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/users/13
+Completed 302 Found in 25ms (ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users/13" for ::1 at 2025-10-26 10:03:12 +0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 13 LIMIT 1 /*action='show',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  Rendering layout layouts/app.html.erb
+  Rendering users/show.html.erb within layouts/app
+  Rendered users/show.html.erb within layouts/app (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.1ms)
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:03:16 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.1ms)
+Completed 200 OK in 25ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:03:19 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:04:14 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.8ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.2ms)
+Completed 200 OK in 21ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 10:05:43 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.2ms)
+Completed 200 OK in 23ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:18:59 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/forms" for ::1 at 2025-10-26 10:19:03 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/forms"):
+  
+Started GET "/" for ::1 at 2025-10-26 10:19:07 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 1.8ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 2.9ms | GC: 0.1ms)
+Completed 200 OK in 22ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:19:09 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-26 10:19:10 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.6ms | GC: 0.1ms)
+Completed 200 OK in 22ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:19:12 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:19:31 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 1.2ms | GC: 1.1ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 9.1ms | GC: 8.2ms)
+  Rendered layout layouts/kit.html.erb (Duration: 12.5ms | GC: 9.8ms)
+Completed 200 OK in 37ms (Views: 15.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 13.5ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-26 10:19:32 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.2ms | GC: 0.2ms)
+Completed 200 OK in 24ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:19:33 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.5ms | GC: 0.3ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.8ms | GC: 0.3ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:20:11 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 23ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:21:52 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-26 10:22:35 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-26 10:22:36 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-26 10:23:36 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.5ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-26 10:23:37 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.9ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.2ms | GC: 0.1ms)
+Completed 200 OK in 22ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:23:37 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:23:39 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:24:58 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:25:23 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.6ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-26 10:25:27 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 23ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-26 10:25:28 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-26 10:25:30 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.7ms | GC: 0.1ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 2.0ms | GC: 0.1ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 2.5ms | GC: 0.1ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.5ms | GC: 0.1ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 4.7ms | GC: 0.3ms)
+  Rendered layout layouts/kit.html.erb (Duration: 4.8ms | GC: 0.3ms)
+Completed 200 OK in 27ms (Views: 5.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/kit/forms" for ::1 at 2025-10-26 10:25:31 +0500
+Processing by KitController#forms as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/forms/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/forms/index.html.erb within layouts/kit (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-26 10:25:32 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.7ms | GC: 0.1ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.8ms | GC: 0.1ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 1.7ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.0ms | GC: 0.2ms)
+Completed 200 OK in 27ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:25:33 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.6ms | GC: 0.2ms)
+Completed 200 OK in 23ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:25:34 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/forms" for ::1 at 2025-10-26 10:25:34 +0500
+Processing by KitController#forms as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/forms/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/forms/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-26 10:25:35 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-26 10:25:35 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 2.8ms | GC: 1.2ms)
+  Rendered layout layouts/kit.html.erb (Duration: 3.0ms | GC: 1.2ms)
+Completed 200 OK in 26ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/kit/forms" for ::1 at 2025-10-26 10:25:35 +0500
+Processing by KitController#forms as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/forms/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/forms/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-26 10:25:35 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.7ms | GC: 0.2ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.8ms | GC: 0.2ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/components/_modal_close_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/forms/register/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/modal/_container.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 1.7ms | GC: 0.2ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.0ms | GC: 0.3ms)
+Completed 200 OK in 25ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 10:26:00 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.1ms | GC: 0.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 2.7ms | GC: 0.2ms)
+Completed 200 OK in 21ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/kit/forms" for ::1 at 2025-10-26 10:26:01 +0500
+Processing by KitController#forms as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/forms/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/forms/index.html.erb within layouts/kit (Duration: 0.6ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.0ms | GC: 0.1ms)
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:26:01 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 1.5ms | GC: 1.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.9ms | GC: 2.0ms)
+Completed 200 OK in 25ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:26:05 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.7ms | GC: 1.2ms)
+Completed 200 OK in 26ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.0ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-26 10:26:18 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.9ms | GC: 0.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.1ms | GC: 0.2ms)
+Completed 200 OK in 24ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-26 10:26:26 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.7ms | GC: 0.1ms)
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/modals" for ::1 at 2025-10-26 21:03:29 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/modals"):
+  
+Started GET "/" for ::1 at 2025-10-26 21:03:30 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2025-10-26 21:03:30 +0500
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-26 21:03:30 +0500
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-26 21:03:30 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/sessions/new" for ::1 at 2025-10-26 21:03:32 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 21:03:33 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 21:03:36 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 0.9ms | GC: 0.3ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.3ms)
+Completed 200 OK in 24ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 21:03:38 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/sessions/new" for ::1 at 2025-10-26 21:03:39 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 1.0ms | GC: 0.4ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.2ms | GC: 0.4ms)
+Completed 200 OK in 24ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-26 21:03:40 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:00:06 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.5ms | GC: 0.1ms)
+Completed 200 OK in 27ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-28 13:00:06 +0500
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-28 13:00:06 +0500
+Started GET "/favicon.ico" for ::1 at 2025-10-28 13:00:06 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/sessions/new" for ::1 at 2025-10-28 13:00:31 +0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering sessions/new.html.erb within layouts/app
+  Rendered sessions/new.html.erb within layouts/app (Duration: 1.9ms | GC: 1.2ms)
+  Rendered layout layouts/app.html.erb (Duration: 2.3ms | GC: 1.2ms)
+Completed 200 OK in 27ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:00:51 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 26ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:00:58 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.1ms)
+Completed 200 OK in 25ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:01:00 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:01:00 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:01:01 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 25ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:01:01 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2025-10-28 13:01:02 +0500
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"", "last_name"=>"", "age"=>"", "city"=>""}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "age", "city", "created_at", "updated_at") VALUES ('', '', NULL, '', '2025-10-28 08:01:02.375630', '2025-10-28 08:01:02.375630') RETURNING "id" /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/users/14
+Completed 302 Found in 26ms (ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users/14" for ::1 at 2025-10-28 13:01:02 +0500
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 14 LIMIT 1 /*action='show',application='V04',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:16:in `show'
+  Rendering layout layouts/app.html.erb
+  Rendering users/show.html.erb within layouts/app
+  Rendered users/show.html.erb within layouts/app (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:01:03 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:33:35 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='V04'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 6.1ms | GC: 0.6ms)
+  Rendered layout layouts/app.html.erb (Duration: 10.6ms | GC: 1.2ms)
+Completed 200 OK in 33ms (Views: 10.7ms | ActiveRecord: 0.8ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:46:01 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 5.0ms | GC: 0.3ms)
+  Rendered layout layouts/app.html.erb (Duration: 5.2ms | GC: 0.3ms)
+Completed 200 OK in 28ms (Views: 5.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:52:54 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='V04'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='V04'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='V04'*/[0m
+Started GET "/" for ::1 at 2025-10-28 13:55:31 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='V04'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 20.8ms | GC: 0.0ms)
+  Rendered layout layouts/app.html.erb (Duration: 28.6ms | GC: 1.6ms)
+Completed 200 OK in 68ms (Views: 31.4ms | ActiveRecord: 1.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 13:56:30 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/app.html.erb
+  Rendering home/index.html.erb within layouts/app
+  Rendered home/index.html.erb within layouts/app (Duration: 19.5ms | GC: 0.4ms)
+  Rendered layout layouts/app.html.erb (Duration: 23.9ms | GC: 0.8ms)
+Completed 200 OK in 46ms (Views: 19.2ms | ActiveRecord: 5.4ms (0 queries, 0 cached) | GC: 0.8ms)
+
+

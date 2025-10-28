@@ -1,0 +1,119 @@
+/* Базовые стили чекбоксов */
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-3xs);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  /* Скрываем нативный чекбокс */
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Кастомный чекбокс */
+  .checkbox-mark {
+    position: relative;
+    width: var(--size-xl);
+    height: var(--size-xl);
+    border: 1px solid var(--color-input-outline-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-input-outline-bg);
+    transition: all var(--transition);
+    flex-shrink: 0;
+
+      /* Галочка */
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: var(--size-xl);
+        height: var(--size-xl);
+        background-image: url('icons/check.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity var(--transition);
+      }
+
+  }
+
+
+  /* Лейбл */
+  .checkbox-label {
+    font-size: var(--font-size-md);
+    color: var(--color-text-primary);
+    line-height: 1.5;
+  }
+
+  /* Состояния */
+  &:hover:not(:disabled) .checkbox-mark {
+    border-color: var(--color-input-outline-border-hover);
+  }
+
+  input:checked + .checkbox-mark {
+    background-color: var(--color-btn-primary-bg);
+    border-color: var(--color-btn-primary-bg);
+  }
+
+  &:hover:not(:disabled) input:checked + .checkbox-mark {
+    background-color: var(--color-btn-primary-bg-hover);
+    border-color: var(--color-btn-primary-bg-hover);
+  }
+
+
+  input:checked + .checkbox-mark::after {
+    opacity: 1;
+  }
+
+
+  input:focus + .checkbox-mark {
+    outline: 2px solid var(--color-element-focus-border);
+    outline-offset: 2px;
+  }
+
+  /* Disabled состояние */
+  input:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  input:disabled + .checkbox-mark {
+    cursor: not-allowed;
+    background-color: var(--color-btn-disabled-bg);
+    border-color: var(--color-btn-disabled-text);
+    opacity: 0.5;
+  }
+
+  input:disabled + .checkbox-mark + .checkbox-label {
+    cursor: not-allowed;
+    color: var(--color-btn-disabled-text);
+  }
+
+  input:disabled:checked + .checkbox-mark::after {
+    opacity: 0.3;
+  }
+
+  /* Блокируем hover для disabled */
+  input:disabled:hover + .checkbox-mark {
+    border-color: var(--color-btn-disabled-text);
+    background-color: var(--color-btn-disabled-bg);
+  }
+
+  /* Блокируем hover для disabled checked */
+  &:hover input:disabled:checked + .checkbox-mark {
+    background-color: var(--color-btn-disabled-bg);
+    border-color: var(--color-btn-disabled-text);
+  }
+}
