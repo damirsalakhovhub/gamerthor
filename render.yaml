@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: gamerthor
+    env: ruby
+    buildCommand: bundle install && bundle exec rails assets:precompile
+    startCommand: bundle exec rails server -p $PORT
+    envVars:
+      - key: RAILS_ENV
+        value: production
+      - key: SECRET_KEY_BASE
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 2
