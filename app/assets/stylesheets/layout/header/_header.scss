@@ -20,6 +20,16 @@
   margin-right: 2rem;
 }
 
+.logo__image {
+  height: 48px;
+  width: auto;
+  max-width: 200px;
+  min-width: 0;
+  display: block;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .header__search {
   flex: 1;
   max-width: 40rem;

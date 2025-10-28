@@ -4278,3 +4278,107 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 31ms (Views: 6.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for ::1 at 2025-10-28 17:31:10 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-28 17:31:10 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-28 17:31:10 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+Started GET "/" for ::1 at 2025-10-28 17:31:35 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 7.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 17:33:25 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.6ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | GC: 4.6ms)
+Completed 200 OK in 33ms (Views: 11.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.6ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 17:34:03 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.4ms)
+Completed 200 OK in 25ms (Views: 4.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 17:37:52 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 17:38:43 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.6ms | GC: 0.5ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 2.9ms | GC: 1.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | GC: 2.9ms)
+Completed 200 OK in 35ms (Views: 11.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.8ms)
+
+
