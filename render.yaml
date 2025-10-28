@@ -2,12 +2,18 @@ services:
   - type: web
     name: gamerthor
     env: ruby
-    buildCommand: bundle install && bundle exec rails assets:precompile && bundle exec rails db:migrate
-    startCommand: bundle exec rails server -p $PORT
+    buildCommand: bundle install && bundle exec rails assets:precompile
+    startCommand: bundle exec rails db:create db:migrate && bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RAILS_ENV:-production}
     envVars:
       - key: RAILS_ENV
         value: production
       - key: SECRET_KEY_BASE
         generateValue: true
-      - key: WEB_CONCURRENCY
-        value: 2
+      - key: DATABASE_URL
+        fromDatabase:
+          name: gamerthor-db
+          property: connectionString
+  - type: pserv
+    name: gamerthor-db
+    env: postgresql
+    plan: free

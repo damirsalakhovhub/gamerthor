@@ -11,8 +11,8 @@ module Gamerthor
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
     
-    # Disable pending migration checks
-    config.active_record.check_pending_migrations = false
+    # Allow all hosts for Render deployment
+    config.hosts << ".onrender.com"
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
