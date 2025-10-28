@@ -1,15 +1,23 @@
 <header class="header" role="banner">
-  <div class="header__left">
-    <%= render 'shared/header/logo' %>
-    <%= render 'shared/header/search' %>
-  </div>
-  
-  <div class="header__right">
-    <%= render 'shared/header/country_selector' %>
-    <div class="header__actions">
-      <%= render 'shared/header/favorites_button' %>
-      <%= render 'shared/header/cart_button' %>
+  <div class="header__top">
+    <div class="header__logo">
+      <%= render 'shared/header/logo' %>
     </div>
-    <%= render 'shared/header/login_button' %>
+    
+    <div class="header__search">
+      <%= render 'shared/header/search' %>
+    </div>
+    
+    <div class="header__right">
+      <%= render 'shared/header/country_selector' %>
+      <div class="header__actions">
+        <%= render 'shared/header/favorites_button' %>
+        <%= render 'shared/header/cart_button' %>
+      </div>
+      <%= render 'shared/header/login_button' %>
+      <div class="header__burger">
+        <%= render 'shared/header/burger_button' %>
+      </div>
+    </div>
   </div>
 </header>

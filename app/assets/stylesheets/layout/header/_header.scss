@@ -1,31 +1,39 @@
 // Header layout styles
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   padding: 1rem clamp(1rem, 2vw, 2rem);
-  gap: 2rem;
-  min-width: 800px;
+  // min-width: 800px;
 
-  &__left {
-    display: flex;
+  &__top {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo search right";
     align-items: center;
-    gap: 1.25rem;
-    flex: 1;
-    min-width: 300px;
-    // flex-shrink: 0;
-    
+    gap: 2rem;
   }
 
   &__logo {
+    grid-area: logo;
     flex-shrink: 0;
   }
 
+  &__search {
+    grid-area: search;
+    min-width: 16rem; // 250px
+    max-width: 32rem; // 500px
+    justify-self: start;
+    width: 100%;
+
+    input {
+      // width: 100%;
+    }
+  }
+
   &__right {
+    grid-area: right;
     display: flex;
     align-items: center;
     gap: clamp(.5rem, 1.8vw, 1.25rem);
-    
+    flex-shrink: 0;
   }
 
   &__actions {
@@ -33,15 +41,12 @@
     gap: 1px;
   }
 
-  &__search {
-    flex: 1;
-    min-width: 16rem; // 250px
-    max-width: 32rem; // 500px
-    flex-shrink: 1;
+  &__selectors {
+    display: block;
+  }
 
-    input {
-      width: 100%;
-    }
+  &__burger {
+    display: none;
   }
 
   // Специальные стили для кнопок в хедере
@@ -71,6 +76,40 @@
   @media (max-width: 1100px) {
     .header__login .btn-text {
       display: none;
+    }
+  }
+
+  @media (max-width: 850px) {
+    &__top {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: 
+        "logo right"
+        "search search";
+      gap: 1rem;
+    }
+
+    &__search {
+      min-width: unset;
+      max-width: unset;
+      justify-self: stretch;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .header__selectors {
+      display: none;
+    }
+
+    .header__actions {
+      display: none;
+    }
+
+    .header__login {
+      display: none;
+    }
+
+    .header__burger {
+      display: block;
     }
   }
 }
