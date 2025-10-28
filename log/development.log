@@ -4595,3 +4595,35 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
+Started GET "/" for ::1 at 2025-10-28 17:48:23 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 17:51:23 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
