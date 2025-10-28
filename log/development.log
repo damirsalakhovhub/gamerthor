@@ -4627,3 +4627,83 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for ::1 at 2025-10-28 18:02:01 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 10.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 18:02:17 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 8.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 18:02:25 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | GC: 0.2ms)
+Completed 200 OK in 40ms (Views: 15.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 18:02:42 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.6ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.1ms)
+Completed 200 OK in 29ms (Views: 6.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-28 18:03:05 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.1ms)
+Completed 200 OK in 28ms (Views: 5.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+

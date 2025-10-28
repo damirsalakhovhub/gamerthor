@@ -131,3 +131,12 @@
   border-radius: 50%;
 }
 
+/* Частично округлые кнопки */
+.btn-rounded-left {
+  border-radius: 50px 0 0 50px;
+}
+
+.btn-rounded-right {
+  border-radius: 0 50px 50px 0;
+}
+
