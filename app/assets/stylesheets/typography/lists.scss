@@ -2,11 +2,11 @@
   /* Базовые стили для списков */
   ul, ol {
     margin-block: 0;
-    padding-inline-start: 1.5rem;
+    padding-inline-start: var(--size-l01); //24px
   }
 
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--size-s01); //8px
 
     &:last-child {
       margin-bottom: 0;

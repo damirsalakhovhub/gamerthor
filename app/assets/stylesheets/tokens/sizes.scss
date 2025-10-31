@@ -1,87 +1,66 @@
 :root {
   /* Size Tokens */
   
-  --size-8xs: 0.125rem; //2px
-  --size-7xs: 0.1875rem; //3px
-  --size-6xs: 0.25rem; //4px
-  --size-5xs: 0.3125rem; //5px
-  --size-4xs: 0.375rem; //6px
-  --size-3xs: 0.5rem; //8px
-  --size-2xs: 0.625rem; //10px
-  --size-xs: 0.75rem; //12px
-  --size-sm: 0.875rem; //14px
-  --size-md: 1rem; //16px
-  --size-lg: 1.125rem; //18px
-  --size-xl: 1.25rem; //20px
-  --size-2xl: 1.375rem; //22px
-  --size-3xl: 1.5rem; //24px
-  --size-4xl: 1.625rem; //26px
-  --size-5xl: 1.75rem; //28px
-  --size-6xl: 1.875rem; //30px
-  --size-7xl: 2rem; //32px
-  --size-8xl: 2.25rem; //36px
-  --size-9xl: 2.5rem; //40px
-  --size-10xl: 2.75rem; //44px
-  --size-11xl: 3rem; //48px
-  --size-12xl: 3.5rem; //56px
-  --size-13xl: 4rem; //64px
-  --size-14xl: 4.5rem; //72px
-  --size-15xl: 5rem; //80px
+  --size-xs01: 0.125rem; //2px
+  --size-xs02: 0.1875rem; //3px
+  --size-xs03: 0.25rem; //4px
+  --size-xs04: 0.3125rem; //5px
+  --size-xs05: 0.375rem; //6px
 
-  /* Size Tokens (Step 4px - множитель базового шага) */
-  --size-step-05: 0.125rem; //2px (4px * 0.5)
-  --size-step-075: 0.1875rem; //3px (4px * 0.75)
-  --size-step-1: 0.25rem; //4px (4px * 1)
-  --size-step-125: 0.3125rem; //5px (4px * 1.25)
-  --size-step-15: 0.375rem; //6px (4px * 1.5)
-  --size-step-2: 0.5rem; //8px (4px * 2)
-  --size-step-25: 0.625rem; //10px (4px * 2.5)
-  --size-step-3: 0.75rem; //12px (4px * 3)
-  --size-step-35: 0.875rem; //14px (4px * 3.5)
-  --size-step-4: 1rem; //16px (4px * 4)
-  --size-step-45: 1.125rem; //18px (4px * 4.5)
-  --size-step-5: 1.25rem; //20px (4px * 5)
-  --size-step-55: 1.375rem; //22px (4px * 5.5)
-  --size-step-6: 1.5rem; //24px (4px * 6)
-  --size-step-65: 1.625rem; //26px (4px * 6.5)
-  --size-step-7: 1.75rem; //28px (4px * 7)
-  --size-step-75: 1.875rem; //30px (4px * 7.5)
-  --size-step-8: 2rem; //32px (4px * 8)
-  --size-step-9: 2.25rem; //36px (4px * 9)
-  --size-step-10: 2.5rem; //40px (4px * 10)
-  --size-step-11: 2.75rem; //44px (4px * 11)
-  --size-step-12: 3rem; //48px (4px * 12)
-  --size-step-14: 3.5rem; //56px (4px * 14)
-  --size-step-16: 4rem; //64px (4px * 16)
-  --size-step-18: 4.5rem; //72px (4px * 18)
-  --size-step-20: 5rem; //80px (4px * 20)
+  --size-s01: 0.5rem; //8px
+  --size-s02: 0.625rem; //10px
+  --size-s03: 0.75rem; //12px
+  --size-s04: 0.875rem; //14px
+  
+  --size-m01: 1rem; //16px
+  --size-m02: 1.125rem; //18px
+  --size-m03: 1.25rem; //20px
+  --size-m04: 1.375rem; //22px
+
+  --size-l01: 1.5rem; //24px
+  --size-l02: 1.625rem; //26px
+  --size-l03: 1.75rem; //28px
+  --size-l04: 1.875rem; //30px
+  
+  --size-xl01: 2rem; //32px
+  --size-xl02: 2.25rem; //36px
+  --size-xl03: 2.5rem; //40px
+  --size-xl04: 2.75rem; //44px
+
+  --size-xxl01: 3rem; //48px
+  --size-xxl02: 3.5rem; //56px
+  --size-xxl03: 4rem; //64px
+  --size-xxl04: 4.5rem; //72px
+  --size-xxl05: 5rem; //80px
+
+
 
   /* Element Sizes */
-  --size-element-sm-font: var(--size-sm); //14px
-  --size-element-sm-line-height: var(--size-md); //16px
-  --size-element-sm-border-radius: var(--size-6xs); //4px
-  --size-element-sm-padding-y: var(--size-6xs); //4px 
-  --size-element-sm-padding-x: var(--size-5xs); //6px
-  --size-element-sm-gap: var(--size-8xs); //2px
-  --size-element-sm-icon: var(--size-md); //16px
-  --size-element-sm-text-padding: var(--size-8xs); //2px
+  --size-element-sm-font: var(--size-s04); //14px
+  --size-element-sm-line-height: var(--size-m01); //16px
+  --size-element-sm-border-radius: var(--size-xs03); //4px
+  --size-element-sm-padding-y: var(--size-xs03); //4px 
+  --size-element-sm-padding-x: var(--size-xs05); //6px
+  --size-element-sm-gap: var(--size-xs01); //2px
+  --size-element-sm-icon: var(--size-m01); //16px
+  --size-element-sm-text-padding: var(--size-xs01); //2px
 
-  --size-element-md-font: var(--size-md); //16px
-  --size-element-md-line-height: var(--size-xl); //20px
-  --size-element-md-border-radius: var(--size-4xs); //6px
-  --size-element-md-padding-y: var(--size-4xs); //6px
-  --size-element-md-padding-x: var(--size-3xs); //8px
+  --size-element-md-font: var(--size-m01); //16px
+  --size-element-md-line-height: var(--size-m03); //20px
+  --size-element-md-border-radius: var(--size-xs05); //6px
+  --size-element-md-padding-y: var(--size-xs05); //6px
+  --size-element-md-padding-x: var(--size-s01); //8px
   --size-element-md-gap: 0;
-  --size-element-md-icon: var(--size-xl); //20px
-  --size-element-md-text-padding: var(--size-6xs); //4px
+  --size-element-md-icon: var(--size-m03); //20px
+  --size-element-md-text-padding: var(--size-xs03); //4px
   
-  --size-element-lg-font: var(--size-lg); //18px
-  --size-element-lg-line-height: var(--size-2xl); //22px
-  --size-element-lg-border-radius: var(--size-3xs); //8px
-  --size-element-lg-padding-y: 0.5rem;
-  --size-element-lg-padding-x: var(--size-xs); //12px
-  --size-element-lg-gap: var(--size-7xs); //3px
-  --size-element-lg-icon: var(--size-xl); //20px
-  --size-element-lg-text-padding: var(--size-7xs); //3px
-  --size-element-lg-text-line-height: var(--size-3xl); //24px
+  --size-element-lg-font: var(--size-m02); //18px
+  --size-element-lg-line-height: var(--size-m04); //22px
+  --size-element-lg-border-radius: var(--size-s01); //8px
+  --size-element-lg-padding-y: var(--size-s01); //8px
+  --size-element-lg-padding-x: var(--size-s03); //12px
+  --size-element-lg-gap: var(--size-xs02); //3px
+  --size-element-lg-icon: var(--size-m03); //20px
+  --size-element-lg-text-padding: var(--size-xs02); //3px
+  --size-element-lg-text-line-height: var(--size-l01); //24px
 }

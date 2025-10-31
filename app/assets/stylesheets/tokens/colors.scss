@@ -1,346 +1,217 @@
 :root {
-    /* Color Tokens */
-    
-    --white: 215 10% 98%; 
+
+  /* COLOR TOKENS: */
+  // --white: 215 10% 98%; 
+
+  --white-transp-50: 0 0% 100% / 0.5;
+  --white-transp-40: 0 0% 100% / 0.4;
+  --white-transp-30: 0 0% 100% / 0.3;
+  --white-transp-20: 0 0% 100% / 0.2;
+
+  /* Gray 25: */
+  --gray25-28: 215 25% 28%;
+  --gray25-25: 215 25% 25%;
+  --gray25-23: 215 25% 23%;
+  --gray25-20: 215 25% 20%;
+  --gray25-17: 215 25% 17%;
+  --gray25-15: 215 25% 15%;
+  --gray25-13: 215 25% 13%;
+  --gray25-10: 215 25% 10%;
+
+  --gray-transp-80: 215 10% 25% / 0.8;
+  --gray-transp-60: 215 10% 25% / 0.6;
+  --gray-transp-30: 215 10% 25% / 0.30;
+
+  /* Gray 15: */
+  --gray15-100: 215 15% 98%;
+  --gray15-80: 215 15% 80%;
+  --gray15-70: 215 15% 70%;
+  --gray15-50: 215 15% 50%;
+  --gray15-10: 215 15% 10%;
+
+  /* Red: */
+  --red-60: 10 85% 60%;
+  --red-30: 10 85% 30%;
+
+  /* Orange: */
+  --orange-65: 45 100% 65%;
+
+  /* Green: */
+  --green-50: 160 100% 50%;
+  --green-40: 160 100% 40%;
+  --green-30: 160 100% 30%;
+  --green-20: 160 100% 20%;
+  --green-15: 160 50% 15%;
+  --green-5: 160 50% 5%;
+
+  --green-transp-50: 160 100% 40% / 0.5;
+  --green-transp-15: 160 100% 40% / 0.15;
+  --transp-green-10: 160 100% 40% / 0.1;
+
+  /* Lime: */
+  --lime-80: 90 100% 80%;
+
+  /* Blue: */
+  --blue-30: 230 70% 30%;
+
+  /* Cyan: */
+  --cyan-80: 195 100% 80%;
+  --cyan-60: 195 100% 60%;
+  --cyan-50: 195 100% 50%;
+  --cyan-35: 195 100% 35%;
+  --cyan-15: 195 80% 15%;
+
+  --cyan-transp-20: 195 100% 80% / 0.2;
+  --cyan-transp-10: 195 100% 60% / 0.1;
+
+  /* Purple: */
+  --purple-70: 265 100% 70%;
+  --purple-60: 265 100% 60%;
+
+
+
+  /* SEMANTIC COLORS: */
+
+  /* BACKGROUND COLORS: */
+  --color-bg-primary: hsl(var(--gray25-10));
+  --color-bg-block: hsl(var(--gray25-13));
+  --color-bg-block-hover: hsl(var(--gray25-17));
+  --color-bg-green: hsl(var(--green-40));
+  --color-bg-white: hsl(var(--gray15-100));
+  --color-bg-cyan: hsl(var(--cyan-50));
+  --color-bg-red: hsl(var(--red-60));
+  --color-bg-purple: hsl(var(--purple-60));
+  --color-bg-price: hsl(var(--cyan-15));
+  --color-bg-frost: hsl(var(--gray-transp-30));
+  --color-bg-frost-dark: hsl(var(--gray-transp-60));
+
+
+
+  /* BUTTONS: */
   
-    /* Grayscale Palette (формат: h s l для использования с альфой) */
-    
-    --black: 0 0% 0%;
-    --gray-1: 215 10% 1%;
-    --gray-2: 215 10% 2%;
-    --gray-3: 215 10% 3%;
-    --gray-5: 215 10% 5%;
-    --gray-6: 215 10% 6%;
-    --gray-7: 215 10% 7%;
-    --gray-8: 215 10% 8%;
-    --gray-9: 215 10% 9%;
-    --gray-10: 215 10% 10%;
-    --gray-11: 215 10% 11%;
-    --gray-12: 215 10% 12%;
-    --gray-13: 215 10% 13%;
-    --gray-14: 215 10% 14%;
-    --gray-15: 215 10% 15%;
-    --gray-20: 215 10% 20%;
-    --gray-25: 215 10% 25%;
-    --gray-30: 215 10% 30%;
-    --gray-35: 215 10% 35%;
-    --gray-40: 215 10% 40%;
-    --gray-45: 215 10% 45%;
-    --gray-50: 215 10% 50%;
-    --gray-55: 215 10% 55%;
-    --gray-60: 215 10% 60%;
-    --gray-65: 215 10% 65%;
-    --gray-70: 215 10% 70%;
-    --gray-75: 215 10% 75%;
-    --gray-80: 215 10% 80%;
-    --gray-85: 215 10% 85%;
-    --gray-87: 215 10% 87%;
-    --gray-90: 215 10% 90%;
-    --gray-92: 215 10% 92%;
-    --gray-94: 215 10% 94%;
-    --gray-96: 215 10% 96%;
-    --gray-100: 215 10% 98%; 
-  
-    /* Accent Colors */
-    --red-10: 10 70% 10%;
-    --red-20: 10 70% 20%;
-    --red-30: 10 70% 30%;
-    --red-40: 10 70% 40%;
-    --red-45: 10 70% 45%;
-    --red-50: 10 70% 50%;
-    --red-60: 10 70% 60%;
-    --red-70: 10 70% 70%;
-    --red-80: 10 70% 80%;
-    --red-90: 10 70% 90%;
-    --red-100: 10 70% 96%;
-    
-    --orange-10: 30 85% 10%;
-    --orange-20: 30 85% 20%;
-    --orange-30: 30 85% 30%;
-    --orange-40: 30 85% 40%;
-    --orange-50: 30 85% 50%;
-    --orange-60: 30 85% 60%;
-    --orange-70: 30 85% 70%;
-    --orange-80: 30 85% 80%;
-    --orange-90: 30 85% 90%;
-    --orange-100: 30 85% 96%;
-    
-    --yellow-10: 50 90% 10%;
-    --yellow-20: 50 90% 20%;
-    --yellow-30: 50 90% 30%;
-    --yellow-40: 50 90% 40%;
-    --yellow-50: 50 90% 50%;
-    --yellow-60: 50 90% 60%;
-    --yellow-70: 50 90% 70%;
-    --yellow-80: 50 90% 80%;
-    --yellow-90: 50 90% 90%;
-    --yellow-100: 50 90% 96%;
-  
-    --blue-10: 215 100% 10%;
-    --blue-20: 215 100% 20%;
-    --blue-30: 215 100% 30%;
-    --blue-40: 215 100% 40%;
-    --blue-50: 215 100% 50%;
-    --blue-60: 215 100% 60%;
-    --blue-70: 215 100% 70%;
-    --blue-80: 215 100% 80%;
-    --blue-90: 215 100% 90%;
-    --blue-100: 215 100% 96%;
-  
-    --green-10: 130 90% 10%;
-    --green-20: 130 90% 20%;
-    --green-25: 130 90% 25%;
-    --green-30: 130 90% 30%;
-    --green-40: 130 60% 40%;
-    --green-45: 130 60% 45%;
-    --green-50: 130 60% 50%;
-    --green-60: 130 60% 60%;
-    --green-70: 130 60% 70%;
-    --green-80: 130 60% 80%;
-    --green-90: 130 60% 90%;
-    --green-100: 130 60% 96%;
-  
-    --indigo-50: 240 70% 97%;
-    --indigo-100: 240 70% 94%;
-    --indigo-600: 240 70% 60%;
-    
-    --purple-50: 270 65% 97%;
-    --purple-100: 270 65% 94%;
-    --purple-600: 270 65% 60%;
-  
-    
+  /* Primary Button: */
+  --color-btn-primary: hsl(var(--green-40));
+  --color-btn-primary-hover: hsl(var(--green-50));
 
-    /* Light Theme ------------------------------------------------------------ */
+  --color-btn-primary-focus-outline: hsl(var(--green-20));
+  --color-btn-primary-fade: hsl(var(--transp-green-10));
+  --color-btn-primary-fade-dark: hsl(var(--transp-green-15));
+  --color-btn-primary-dark: hsl(var(--green-15));
 
-    /* Text Colors Light Theme */
-    --color-text-primary: hsl(var(--gray-10));
-    --color-text-secondary: hsl(var(--gray-50));
-    --color-text-tertiary: hsl(var(--gray-60));
-    --color-text-quaternary: hsl(var(--gray-70));
-    --color-text-placeholder: hsl(var(--gray-60));
-    
-    /* Background Colors Light Theme */
-    --color-bg-primary: hsl(var(--white));
-    --color-bg-secondary: hsl(var(--gray-92));
-    --color-bg-tertiary: hsl(var(--gray-85));
-    --color-bg-muted: hsl(var(--gray-100));
-    
-    /* Table specific backgrounds */
-    --color-table-header: hsl(var(--gray-90));
-    --color-table-tr-bg-hover: hsl(var(--gray-95));
-    
-    --color-border-primary: hsl(var(--gray-85));
-    --color-border-secondary: hsl(var(--gray-90));
-    --color-border-muted: hsl(var(--gray-95));
-    
-    /* Code and UI Colors */
-    --color-code-text: hsl(var(--green-25));
-    
-    /* Syntax Highlighting Colors */
-    --color-syntax-tag: hsl(var(--blue-50));
-    --color-syntax-attribute: hsl(var(--orange-50));
-    --color-syntax-string: hsl(var(--green-40));
-    --color-syntax-comment: hsl(var(--gray-50));
-    --color-syntax-punctuation: hsl(var(--gray-70));
-    --color-syntax-keyword: hsl(var(--red-50));
+  /* Secondary Button: */
+  --color-btn-secondary: hsl(var(--cyan-50));
+  --color-btn-secondary-hover: hsl(var(--cyan-60));
+  --color-btn-secondary-transparent: hsl(var(--cyan-transp-10));
+  --color-btn-secondary-transparent-dark: hsl(var(--cyan-transp-20));
 
-    /* Button Colors */
-    --color-btn-default-bg: hsl(var(--gray-90));
-    --color-btn-default-bg-hover: hsl(var(--gray-85));
-    --color-btn-default-text: var(--color-text-primary);
-    --color-btn-default-text-hover: var(--color-text-primary-dark);
+  /* Frost Button: */
+  --color-btn-frost: hsl(var(--gray-transp-30));
 
-    --color-btn-primary-bg: hsl(var(--blue-50));
-    --color-btn-primary-bg-hover: hsl(var(--blue-40));
-    --color-btn-primary-text: hsl(var(--white));
 
-    --color-btn-success-bg: hsl(var(--green-40));
-    --color-btn-success-bg-hover: hsl(var(--green-30));
-    --color-btn-success-text: hsl(var(--white));
+
+  /* TEXT COLORS: */
+
+  /* Primary Text: */
+  --color-text-primary: hsl(var(--gray15-100));
+  --color-text-secondary: hsl(var(--gray15-70));
+  --color-text-tertiary: hsl(var(--gray15-50));
+  --color-text-placeholder: hsl(var(--white-transp-30));
+  --color-text-green-placeholder: hsl(var(--green-transp-50));
+
+  /* Green Text: */
+  --color-text-green: hsl(var(--green-40));
+  --color-text-green-secondary: hsl(var(--green-30));
+  --color-text-green-underline: hsl(var(--transp-green-50));
+  --color-text-green-dark: hsl(var(--green-5));
+
+  /* Cyan Text: */
+  --color-text-cyan: hsl(var(--cyan-50));
+  --color-text-cyan-secondary: hsl(var(--cyan-35));
+
+  /* Purple Text: */
+  --color-text-purple: hsl(var(--purple-70));
+
+  /* Red Text: */
+  --color-text-red: hsl(var(--red-60));
+
+
+  /*LINK COLORS: */
+  --color-link-primary: hsl(var(--green-40));
+  --color-link-primary-hover: hsl(var(--green-50));
+
+  --color-link-secondary: hsl(var(--green-30));
+  --color-link-secondary-hover: hsl(var(--green-40));
+
+  --color-link-underline: hsl(var(--green-transp-50));
+
+
+  /* ELEMENTS COLORS: */
+  --color-element-primary: hsl(var(--gray25-15));
+  --color-element-secondary: hsl(var(--gray25-20));
+  --color-element-tertiary: hsl(var(--gray25-25));
+  --color-element-quaternary: hsl(var(--gray25-30));
+
+  --color-element-block-primary: hsl(var(--gray25-17));
+  --color-element-block-secondary: hsl(var(--gray25-23));
+  --color-element-block-tertiary: hsl(var(--gray25-28));
+  --color-element-block-quaternary: hsl(var(--gray25-35));
+
+  /* BORDER COLORS: */
+  --color-border-primary: hsl(var(--gray25-15));
+  --color-border-secondary: hsl(var(--gray25-25));
+  --color-border-tertiary: hsl(var(--gray25-35));
+  --color-border-quaternary: hsl(var(--gray25-45));
+
+  --color-border-green: hsl(var(--green-40));
+  --color-border-green-secondary: hsl(var(--green-30));
+  --color-border-green-tertiary: hsl(var(--green-20));
+  --color-border-green-quaternary: hsl(var(--green-10));
+
+  --color-border-cyan: hsl(var(--cyan-50));
+  --color-border-purple: hsl(var(--purple-60));
+  --color-border-red: hsl(var(--red-60));
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* DARK MODE COLORS: */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* BACKGROUND COLORS: */
+    --color-bg-primary: hsl(var(--gray25-10));
+    --color-bg-block: hsl(var(--gray25-13));
+    --color-bg-block-hover: hsl(var(--gray25-17));
     
-    --color-btn-danger-bg: hsl(var(--red-50));
-    --color-btn-danger-bg-hover: hsl(var(--red-45));
-    --color-btn-danger-text: hsl(var(--white));
+    /* TEXT COLORS: */
+    --color-text-primary: hsl(var(--gray15-100));
+    --color-text-secondary: hsl(var(--gray15-70));
+    --color-text-tertiary: hsl(var(--gray15-50));
     
-    --color-btn-white-bg: hsl(var(--white));
-    --color-btn-white-bg-hover: hsl(var(--gray-95));
-    --color-btn-white-text: var(--color-text-primary);
-
-    --color-btn-black-bg: hsl(var(--gray-10));
-    --color-btn-black-bg-hover: hsl(var(--gray-25));
-    --color-btn-black-text: hsl(var(--gray-96));
-    --color-btn-black-text-hover: hsl(var(--white));
-
-    --color-btn-transparent-bg: transparent;
-    --color-btn-transparent-bg-hover: hsl(var(--gray-90));
-    --color-btn-outline-text: hsl(var(--gray-50));
-    --color-btn-transparent-text-hover: hsl(var(--gray-10));
+    /* ELEMENTS COLORS: */
+    --color-element-primary: hsl(var(--gray25-15));
+    --color-element-secondary: hsl(var(--gray25-20));
+    --color-element-tertiary: hsl(var(--gray25-25));
+    --color-element-quaternary: hsl(var(--gray25-30));
     
-    --color-btn-outline-bg: transparent;
-    --color-btn-outline-border: hsl(var(--gray-85));
-    --color-btn-outline-border-hover: hsl(var(--gray-50));
-    --color-btn-outline-text: hsl(var(--gray-20));
-    --color-btn-outline-text-hover: hsl(var(--gray-10));
-
-    --color-btn-disabled-bg: hsl(var(--gray-80));
-    --color-btn-disabled-text: hsl(var(--gray-50));
-
-    /* Select Colors */
-    --color-select-default-bg: hsl(var(--gray-90));
-    --color-select-default-bg-hover: hsl(var(--gray-85));
-    --color-select-default-text: var(--color-text-primary);
+    --color-element-block-primary: hsl(var(--gray25-17));
+    --color-element-block-secondary: hsl(var(--gray25-23));
+    --color-element-block-tertiary: hsl(var(--gray25-28));
+    --color-element-block-quaternary: hsl(var(--gray25-35));
     
-    --color-select-outline-bg: transparent;
-    --color-select-outline-border: hsl(var(--gray-85));
-    --color-select-outline-border-hover: hsl(var(--gray-50));
-    --color-select-outline-text: hsl(var(--gray-20));
-    --color-select-outline-text-hover: hsl(var(--gray-10));
-    
-    --color-select-disabled-bg: hsl(var(--gray-80));
-    --color-select-disabled-text: hsl(var(--gray-50));
-
-    /* Input Colors */
-    --color-input-outline-bg: transparent;
-    --color-input-outline-border: hsl(var(--gray-75));
-    --color-input-outline-border-hover: hsl(var(--gray-50));
-    --color-input-outline-border-focus: hsl(var(--blue-50));
-    --color-input-outline-text: hsl(var(--gray-20));
-    
-    --color-input-disabled-bg: hsl(var(--gray-80));
-    --color-input-disabled-text: hsl(var(--gray-50));
-
-    /* Form Labels */
-    --color-form-label: var(--color-text-primary);
-    --color-form-label-muted: var(--color-text-secondary);
-
-    /* Switch Colors */
-    --color-switch-track-off: var(--color-btn-default-bg);
-    --color-switch-track-hover: var(--color-btn-default-bg-hover);
-    --color-switch-track-on: var(--color-btn-primary-bg);
-    --color-switch-track-on-hover: var(--color-btn-primary-bg-hover);
-    --color-switch-thumb: hsl(var(--white));
-    --color-switch-label: var(--color-text-primary);
-    
-    /* Switch Disabled Colors */
-    --color-switch-disabled-track: hsl(var(--gray-85));
-    --color-switch-disabled-thumb: hsl(var(--gray-90));
-    --color-switch-disabled-label: hsl(var(--gray-60));
-
-    /* Element Focus Border */
-    --color-element-focus-border: hsla(210 100% 50% / 0.3);
-    
-    /* Error Colors */
-    --color-error: hsl(var(--red-50));
-
+    /* BORDER COLORS: */
+    --color-border-primary: hsl(var(--gray25-15));
+    --color-border-secondary: hsl(var(--gray25-25));
+    --color-border-tertiary: hsl(var(--gray25-35));
+    --color-border-quaternary: hsl(var(--gray25-45));
   }
-
-  
-
-
-
-  /* DARK THEME ------------------------------------------------------------ */
-
-  [data-theme="dark"] {
-    /* Text Colors Dark Theme */
-    --color-text-primary: hsl(var(--gray-90));
-    --color-text-secondary: hsl(var(--gray-65));
-    --color-text-tertiary: hsl(var(--gray-40));
-    --color-text-quaternary: hsl(var(--gray-30));
-    --color-text-placeholder: hsl(var(--gray-30));
-
-    /* Background Colors Dark Theme */
-    --color-bg-primary: hsl(215 25% 10%);
-    --color-bg-secondary: hsl(var(--gray-10));
-    --color-bg-tertiary: hsl(var(--gray-15));
-    --color-bg-muted: hsl(var(--gray-30));
-    --color-bg-block: hsl(215 25% 13%);
-    
-    /* Table specific backgrounds dark theme */
-    --color-table-header: hsl(var(--gray-15));
-    --color-table-tr-bg-hover: hsl(var(--gray-9));
-      
-      --color-border-primary: hsl(var(--gray-30));
-      --color-border-secondary: hsl(var(--gray-20));
-      --color-border-muted: hsl(var(--gray-20));
-      
-      /* Button Colors Dark Theme */
-      --color-btn-default-bg: hsl(var(--gray-15));
-      --color-btn-default-bg-hover: hsl(var(--gray-25));
-      
-      --color-btn-transparent-bg-hover: hsl(var(--gray-15));
-      --color-btn-transparent-text: hsl(var(--color-text-primary));
-      --color-btn-transparent-text-hover: hsl(var(--white));
-      
-      --color-btn-outline-border: hsl(var(--gray-20));
-      --color-btn-outline-border-hover: hsl(var(--gray-30));
-      --color-btn-outline-text: hsl(var(--color-text-primary));
-      --color-btn-outline-text-hover: hsl(var(--white));
-      
-      --color-btn-success-bg: hsl(var(--green-40));
-      --color-btn-success-bg-hover: hsl(var(--green-30));
-      --color-btn-success-text: hsl(var(--white));
-      
-      --color-btn-danger-bg: hsl(var(--red-50));
-      --color-btn-danger-bg-hover: hsl(var(--red-45));
-      --color-btn-danger-text: hsl(var(--white));
-      
-      --color-btn-white-bg: hsl(var(--gray-94));
-      --color-btn-white-bg-hover: hsl(var(--gray-80));
-      --color-btn-white-text: hsl(var(--gray-10));
-      --color-btn-white-text-hover: hsl(var(--gray-2));
-      
-      --color-btn-black-bg: hsl(var(--gray-1));
-      --color-btn-black-bg-hover: hsl(var(--gray-15));
-      --color-btn-black-text: hsl(var(--color-text-primary));
-      --color-btn-black-text-hover: hsl(var(--gray-98));
-      
-      --color-code-text: hsl(var(--green-60));
-      
-      --color-syntax-tag: hsl(var(--blue-60));
-      --color-syntax-attribute: hsl(var(--orange-60));
-      --color-syntax-string: hsl(var(--green-60));
-      --color-syntax-comment: hsl(var(--gray-60));
-      --color-syntax-punctuation: hsl(var(--gray-60));
-      --color-syntax-keyword: hsl(var(--red-60));
-
-      --color-btn-disabled-bg: hsl(var(--gray-20));
-      --color-btn-disabled-text: hsl(var(--gray-40));
-      
-      /* Select Colors Dark Theme */
-      --color-select-default-bg: hsl(var(--gray-10));
-      --color-select-default-bg-hover: hsl(var(--gray-25));
-      
-      --color-select-outline-border: hsl(var(--gray-20));
-      --color-select-outline-border-hover: hsl(var(--gray-30));
-      --color-select-outline-text: hsl(var(--color-text-primary));
-      --color-select-outline-text-hover: hsl(var(--white));
-      
-      --color-select-disabled-bg: hsl(var(--gray-20));
-      --color-select-disabled-text: hsl(var(--gray-40));
-      
-      /* Input Colors Dark Theme */
-      --color-input-outline-border: hsl(var(--gray-20));
-      --color-input-outline-border-hover: hsl(var(--gray-30));
-      --color-input-outline-border-focus: hsl(var(--blue-50));
-      --color-input-outline-text: hsl(var(--color-text-primary));
-      
-      --color-input-disabled-bg: hsl(var(--gray-20));
-      --color-input-disabled-text: hsl(var(--gray-40));
-      
-      /* Form Labels Dark Theme */
-      --color-form-label: hsl(var(--gray-70));
-      --color-form-label-muted: hsl(var(--gray-50));
-      
-      /* Switch Colors Dark Theme */
-      /* достаточно светлой темы тк все наследуется от кнопок*/
-      
-      /* Switch Disabled Colors Dark Theme */
-      --color-switch-disabled-track: var(--color-btn-disabled-bg);
-      --color-switch-disabled-thumb: var(--color-btn-disabled-text);
-      --color-switch-disabled-label: var(--color-btn-disabled-text);
-      
-      /* Error Colors Dark Theme */
-      --color-error: hsl(var(--red-60));
-
-    }
-  
+}

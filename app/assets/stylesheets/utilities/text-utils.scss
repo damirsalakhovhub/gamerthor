@@ -7,12 +7,36 @@
   .text-secondary {
     color: var(--color-text-secondary);
   }
-  
-  .text-muted {
-    color: var(--color-text-muted);
+
+  .text-tertiary {
+    color: var(--color-text-tertiary);
   }
-  
-  .text-accent {
-    color: var(--color-text-accent);
+
+  .text-placeholder {
+    color: var(--color-text-placeholder);
+  }
+
+  .text-green {
+    color: var(--color-text-green);
+  }
+
+  .text-green-secondary {
+    color: var(--color-text-green-secondary);
+  }
+
+  .text-cyan {
+    color: var(--color-text-cyan);
+  }
+
+  .text-cyan-secondary {
+    color: var(--color-text-cyan-secondary);
+  }
+
+  .text-purple {
+    color: var(--color-text-purple);
+  }
+
+  .text-red {
+    color: var(--color-text-red);
   }
 }

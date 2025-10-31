@@ -9427,3 +9427,2386 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for ::1 at 2025-10-29 11:44:54 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/?region=spain&language=en&currency=eur" for ::1 at 2025-10-29 11:45:01 +0500
+Processing by HomeController#index as HTML
+  Parameters: {"region" => "spain", "language" => "en", "currency" => "eur"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.4ms | GC: 0.3ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.5ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.6ms)
+Completed 200 OK in 28ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/" for ::1 at 2025-10-29 12:27:12 +0500
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.2ms | GC: 0.2ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.7ms | GC: 0.3ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.3ms)
+Completed 200 OK in 26ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 08:07:33 +0500
+  
+ActiveRecord::NoDatabaseError (We could not find your database: gamerthor_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "gamerthor_development" does not exist
+)
+
+Information for: ActiveRecord::NoDatabaseError (We could not find your database: gamerthor_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+  
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.new_client'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:939:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#connect'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:951:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#reconnect'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:773:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:763:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:781:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:987:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:986:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote_string'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#quoted_scope'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#data_source_sql'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.3) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.3) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.3) lib/active_record/migration.rb:1430:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.3) lib/active_record/migration.rb:1278:in 'Class#new'
+activerecord (8.0.3) lib/active_record/migration.rb:1278:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.3) lib/active_record/migration.rb:762:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.3) lib/active_record/migration.rb:761:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:760:in 'Array#each'
+activerecord (8.0.3) lib/active_record/migration.rb:760:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:739:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:659:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.3) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.3) lib/active_record/migration.rb:664:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.3) lib/active_record/migration.rb:656:in 'Thread::Mutex#synchronize'
+activerecord (8.0.3) lib/active_record/migration.rb:656:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.3) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.3) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.3) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+propshaft (1.3.1) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.3) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "gamerthor_development" does not exist
+):
+  
+pg-1.6.2-arm64 (darwin) lib/pg/connection.rb:751:in 'PG::Connection::Pollable#polling_loop'
+pg-1.6.2-arm64 (darwin) lib/pg/connection.rb:795:in 'PG::Connection#async_connect_or_reset'
+pg-1.6.2-arm64 (darwin) lib/pg/connection.rb:951:in 'PG::Connection.connect_to_hosts'
+pg-1.6.2-arm64 (darwin) lib/pg/connection.rb:871:in 'PG::Connection.new'
+pg-1.6.2-arm64 (darwin) lib/pg.rb:88:in 'PG.connect'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.new_client'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:939:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#connect'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:951:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#reconnect'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:773:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:763:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:781:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:987:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:986:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote_string'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#quoted_scope'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#data_source_sql'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.3) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.3) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.3) lib/active_record/migration.rb:1430:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.3) lib/active_record/migration.rb:1278:in 'Class#new'
+activerecord (8.0.3) lib/active_record/migration.rb:1278:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.3) lib/active_record/migration.rb:762:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.3) lib/active_record/migration.rb:761:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:760:in 'Array#each'
+activerecord (8.0.3) lib/active_record/migration.rb:760:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:739:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:659:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.3) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.3) lib/active_record/migration.rb:664:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.3) lib/active_record/migration.rb:656:in 'Thread::Mutex#synchronize'
+activerecord (8.0.3) lib/active_record/migration.rb:656:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.3) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.3) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.3) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+propshaft (1.3.1) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.3) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/" for ::1 at 2025-10-31 08:07:36 +0500
+  
+ActiveRecord::NoDatabaseError (We could not find your database: gamerthor_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "gamerthor_development" does not exist
+)
+
+Information for: ActiveRecord::NoDatabaseError (We could not find your database: gamerthor_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+  
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.new_client'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:939:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#connect'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:951:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#reconnect'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:773:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:763:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:781:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:987:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:986:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote_string'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#quoted_scope'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#data_source_sql'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.3) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.3) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.3) lib/active_record/migration.rb:1430:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.3) lib/active_record/migration.rb:1278:in 'Class#new'
+activerecord (8.0.3) lib/active_record/migration.rb:1278:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.3) lib/active_record/migration.rb:762:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.3) lib/active_record/migration.rb:761:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:760:in 'Array#each'
+activerecord (8.0.3) lib/active_record/migration.rb:760:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:739:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:659:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.3) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.3) lib/active_record/migration.rb:664:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.3) lib/active_record/migration.rb:656:in 'Thread::Mutex#synchronize'
+activerecord (8.0.3) lib/active_record/migration.rb:656:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.3) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.3) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.3) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+propshaft (1.3.1) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.3) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "gamerthor_development" does not exist
+):
+  
+pg-1.6.2-arm64 (darwin) lib/pg/connection.rb:751:in 'PG::Connection::Pollable#polling_loop'
+pg-1.6.2-arm64 (darwin) lib/pg/connection.rb:795:in 'PG::Connection#async_connect_or_reset'
+pg-1.6.2-arm64 (darwin) lib/pg/connection.rb:951:in 'PG::Connection.connect_to_hosts'
+pg-1.6.2-arm64 (darwin) lib/pg/connection.rb:871:in 'PG::Connection.new'
+pg-1.6.2-arm64 (darwin) lib/pg.rb:88:in 'PG.connect'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter.new_client'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:939:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#connect'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:951:in 'ActiveRecord::ConnectionAdapters::PostgreSQLAdapter#reconnect'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:773:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:763:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:781:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:987:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.3) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract_adapter.rb:986:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote_string'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::Quoting#quote'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#quoted_scope'
+activerecord (8.0.3) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaStatements#data_source_sql'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.3) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.3) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.3) lib/active_record/migration.rb:1430:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.3) lib/active_record/migration.rb:1278:in 'Class#new'
+activerecord (8.0.3) lib/active_record/migration.rb:1278:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.3) lib/active_record/migration.rb:762:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.3) lib/active_record/migration.rb:761:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:760:in 'Array#each'
+activerecord (8.0.3) lib/active_record/migration.rb:760:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:739:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.3) lib/active_record/migration.rb:659:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.3) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.3) lib/active_record/migration.rb:664:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.3) lib/active_record/migration.rb:656:in 'Thread::Mutex#synchronize'
+activerecord (8.0.3) lib/active_record/migration.rb:656:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.3) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.3) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.2.3) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+propshaft (1.3.1) lib/propshaft/server.rb:37:in 'Propshaft::Server#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.0.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.3) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (7.1.0) lib/puma/configuration.rb:300:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (7.1.0) lib/puma/request.rb:101:in 'block in Puma::Request#handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in 'Puma::Server#process_client'
+puma (7.1.0) lib/puma/server.rb:262:in 'block in Puma::Server#run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Gamerthor'*/[0m
+  [1m[35m (117.2ms)[0m  [1m[35mCREATE DATABASE "gamerthor_development" ENCODING = 'unicode' /*application='Gamerthor'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mSET search_path TO public /*application='Gamerthor'*/[0m
+  [1m[35m (57.1ms)[0m  [1m[35mCREATE DATABASE "gamerthor_test" ENCODING = 'unicode' /*application='Gamerthor'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='Gamerthor'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE /*application='Gamerthor'*/[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "age" integer, "city" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Gamerthor'*/[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Gamerthor'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20251026042538) /*application='Gamerthor'*/[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-10-31 03:08:06.001250', '2025-10-31 03:08:06.001251') RETURNING "key" /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'c3a7ae63ea246888cc785ee2018be00ac010d803', '2025-10-31 03:08:06.008040', '2025-10-31 03:08:06.008040') RETURNING "key" /*application='Gamerthor'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4858830286296851760) /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Gamerthor'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4858830286296851760) /*application='Gamerthor'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Gamerthor'*/[0m
+Started GET "/" for ::1 at 2025-10-31 08:08:17 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Gamerthor'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.7ms | GC: 0.1ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered shared/header/_header.html.erb (Duration: 5.5ms | GC: 1.3ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.2ms | GC: 0.2ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 1.6ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | GC: 3.5ms)
+Completed 200 OK in 46ms (Views: 19.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 08:14:59 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 3.2ms | GC: 0.2ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | GC: 6.8ms)
+Completed 200 OK in 43ms (Views: 20.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.1ms)
+
+
+Started GET "//kit" for ::1 at 2025-10-31 08:14:59 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.3ms | GC: 0.2ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 1.1ms | GC: 0.6ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.8ms | GC: 1.3ms)
+Completed 200 OK in 29ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2025-10-31 08:14:59 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "//kit" for ::1 at 2025-10-31 08:15:00 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-31 08:15:01 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x0000000139df7a98>::User)
+Caused by: NameError (uninitialized constant #<Class:0x0000000139df7a98>::User)
+
+Information for: ActionView::Template::Error (uninitialized constant #<Class:0x0000000139df7a98>::User):
+    1: <!-- Registration form body -->
+    2: <%= form_with model: User.new, url: users_path, local: true, class: "form", id: "registrationForm" do |form| %>
+    3:   <div class="form-group">
+    4:     <%= form.label :first_name, "First Name", class: "form-label" %>
+    5:     <%= form.text_field :first_name, class: "input input-lg input-outline", placeholder: "Enter first name" %>
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+
+Information for cause: NameError (uninitialized constant #<Class:0x0000000139df7a98>::User):
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+Started GET "/kit" for ::1 at 2025-10-31 08:15:02 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 08:15:03 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 4.1ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-31 08:15:11 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-31 08:15:13 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 3.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-31 08:15:13 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x0000000139df7a98>::User)
+Caused by: NameError (uninitialized constant #<Class:0x0000000139df7a98>::User)
+
+Information for: ActionView::Template::Error (uninitialized constant #<Class:0x0000000139df7a98>::User):
+    1: <!-- Registration form body -->
+    2: <%= form_with model: User.new, url: users_path, local: true, class: "form", id: "registrationForm" do |form| %>
+    3:   <div class="form-group">
+    4:     <%= form.label :first_name, "First Name", class: "form-label" %>
+    5:     <%= form.text_field :first_name, class: "input input-lg input-outline", placeholder: "Enter first name" %>
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+
+Information for cause: NameError (uninitialized constant #<Class:0x0000000139df7a98>::User):
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+Started GET "/kit/modals" for ::1 at 2025-10-31 08:15:17 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.4ms | GC: 0.3ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.8ms | GC: 0.5ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 1.0ms | GC: 0.7ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 1.6ms | GC: 1.1ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.7ms | GC: 1.1ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x0000000139df7a98>::User)
+Caused by: NameError (uninitialized constant #<Class:0x0000000139df7a98>::User)
+
+Information for: ActionView::Template::Error (uninitialized constant #<Class:0x0000000139df7a98>::User):
+    1: <!-- Registration form body -->
+    2: <%= form_with model: User.new, url: users_path, local: true, class: "form", id: "registrationForm" do |form| %>
+    3:   <div class="form-group">
+    4:     <%= form.label :first_name, "First Name", class: "form-label" %>
+    5:     <%= form.text_field :first_name, class: "input input-lg input-outline", placeholder: "Enter first name" %>
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+
+Information for cause: NameError (uninitialized constant #<Class:0x0000000139df7a98>::User):
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+Started GET "/" for ::1 at 2025-10-31 08:17:04 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 08:18:28 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 08:18:28 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.6ms | GC: 0.4ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | GC: 0.4ms)
+Completed 200 OK in 26ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 08:18:28 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 10:07:58 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.9ms | GC: 0.7ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.7ms)
+Completed 200 OK in 26ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-31 10:07:58 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-31 10:07:58 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+Started GET "/" for ::1 at 2025-10-31 11:09:53 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 11:10:53 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 11:32:34 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 11:33:47 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 11:53:42 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 11:55:48 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 46ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 11:55:48 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 11:55:51 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//kit" for ::1 at 2025-10-31 11:55:51 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 11:55:53 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:55:55 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 5.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:55:56 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:56:03 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:56:57 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 40ms (Views: 10.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:57:31 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 6.7ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 11.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 11:57:32 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:57:32 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 13.6ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 14.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-31 11:57:33 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:57:33 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:57:35 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 1.9ms | GC: 1.7ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.3ms | GC: 1.7ms)
+Completed 200 OK in 27ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:59:19 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 3.2ms | GC: 0.2ms)
+  Rendered layout layouts/kit.html.erb (Duration: 7.4ms | GC: 0.3ms)
+Completed 200 OK in 36ms (Views: 11.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 11:59:56 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.8ms | GC: 0.1ms)
+Completed 200 OK in 26ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 12:00:14 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.4ms | GC: 0.2ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.6ms | GC: 0.2ms)
+Completed 200 OK in 25ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 12:00:16 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:00:16 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 12:00:17 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.1ms)
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:00:20 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 2.5ms | GC: 0.5ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.5ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 1.1ms)
+Completed 200 OK in 33ms (Views: 7.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:03:02 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.6ms)
+Completed 200 OK in 28ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:03:13 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.2ms | GC: 0.2ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.6ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 1.0ms)
+Completed 200 OK in 26ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:05:10 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 1.2ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.4ms)
+Completed 200 OK in 28ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:05:54 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.1ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.2ms | GC: 0.2ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.2ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.4ms)
+Completed 200 OK in 27ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:06:14 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.7ms | GC: 0.5ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.6ms)
+Completed 200 OK in 28ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-31 12:06:16 +0500
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-31 12:06:16 +0500
+Started GET "/favicon.ico" for ::1 at 2025-10-31 12:06:16 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for ::1 at 2025-10-31 12:06:16 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2025-10-31 12:07:12 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:07:31 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 2.4ms | GC: 0.5ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | GC: 0.5ms)
+Completed 200 OK in 38ms (Views: 13.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:08:01 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.1ms | GC: 0.7ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.7ms)
+Completed 200 OK in 30ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:23 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.1ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.1ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.6ms | GC: 0.3ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.9ms)
+Completed 200 OK in 28ms (Views: 3.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:24 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.2ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.3ms | GC: 0.3ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.7ms | GC: 0.5ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 1.3ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 1.0ms)
+Completed 200 OK in 29ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:24 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.2ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.1ms | GC: 0.1ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.0ms | GC: 0.7ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 1.3ms)
+Completed 200 OK in 26ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:25 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.7ms | GC: 0.4ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.6ms)
+Completed 200 OK in 26ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:25 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.3ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.6ms)
+Completed 200 OK in 25ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:34 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.2ms | GC: 0.2ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.6ms)
+Completed 200 OK in 26ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:43 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.1ms | GC: 0.1ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.1ms | GC: 0.1ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.5ms)
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:44 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.7ms | GC: 0.4ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.4ms)
+Completed 200 OK in 22ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:44 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.5ms | GC: 0.4ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.7ms | GC: 0.4ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.4ms)
+Completed 200 OK in 22ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:10:49 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.9ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.3ms)
+Completed 200 OK in 26ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-31 12:10:50 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-31 12:10:50 +0500
+Started GET "/favicon.ico" for ::1 at 2025-10-31 12:10:50 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for ::1 at 2025-10-31 12:10:50 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/kit" for ::1 at 2025-10-31 12:10:57 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 5.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:11:15 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:11:18 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:12:02 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 4.5ms | GC: 0.5ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset 'application.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'application.css' was not found in the load path.):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/kit.html.erb:9
+
+Information for cause: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.):
+  
+app/views/layouts/kit.html.erb:9
+Started GET "/kit" for ::1 at 2025-10-31 12:12:10 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.1ms | GC: 0.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset 'application.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'application.css' was not found in the load path.):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/kit.html.erb:9
+
+Information for cause: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.):
+  
+app/views/layouts/kit.html.erb:9
+Started GET "/kit" for ::1 at 2025-10-31 12:13:46 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'application.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'application.css' was not found in the load path.):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/kit.html.erb:9
+
+Information for cause: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.):
+  
+app/views/layouts/kit.html.erb:9
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-31 12:13:46 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-31 12:13:46 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+Started GET "/kit" for ::1 at 2025-10-31 12:13:48 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'application.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'application.css' was not found in the load path.):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/kit.html.erb:9
+
+Information for cause: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.):
+  
+app/views/layouts/kit.html.erb:9
+Started GET "/kit" for ::1 at 2025-10-31 12:13:56 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'application.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'application.css' was not found in the load path.):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/kit.html.erb:9
+
+Information for cause: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.):
+  
+app/views/layouts/kit.html.erb:9
+Started GET "/" for ::1 at 2025-10-31 12:13:59 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset 'application.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'application.css' was not found in the load path.):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9:     
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12:   </head>
+    13: 
+  
+app/views/layouts/application.html.erb:10
+
+Information for cause: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.):
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2025-10-31 12:14:00 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset 'application.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'application.css' was not found in the load path.):
+     7:     <%= csrf_meta_tags %>
+     8:     <%= csp_meta_tag %>
+     9:     
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12:   </head>
+    13: 
+  
+app/views/layouts/application.html.erb:10
+
+Information for cause: Propshaft::MissingAssetError (The asset 'application.css' was not found in the load path.):
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2025-10-31 12:14:41 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 1.9ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:14:48 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:14:55 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:14:56 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:15:00 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 12:15:01 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 4.6ms | GC: 0.8ms)
+  Rendered layout layouts/kit.html.erb (Duration: 4.9ms | GC: 0.8ms)
+Completed 200 OK in 32ms (Views: 6.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-31 12:15:04 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:15:04 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 12:15:05 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 2.6ms | GC: 1.4ms)
+  Rendered layout layouts/kit.html.erb (Duration: 2.9ms | GC: 1.4ms)
+Completed 200 OK in 28ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-31 12:15:06 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-31 12:15:06 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-31 12:15:06 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 1.8ms | GC: 0.7ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 3.8ms | GC: 0.7ms)
+  Rendered layout layouts/kit.html.erb (Duration: 3.8ms | GC: 0.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000013bb17bc8>::User)
+Caused by: NameError (uninitialized constant #<Class:0x000000013bb17bc8>::User)
+
+Information for: ActionView::Template::Error (uninitialized constant #<Class:0x000000013bb17bc8>::User):
+    1: <!-- Registration form body -->
+    2: <%= form_with model: User.new, url: users_path, local: true, class: "form", id: "registrationForm" do |form| %>
+    3:   <div class="form-group">
+    4:     <%= form.label :first_name, "First Name", class: "form-label" %>
+    5:     <%= form.text_field :first_name, class: "input input-lg input-outline", placeholder: "Enter first name" %>
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+
+Information for cause: NameError (uninitialized constant #<Class:0x000000013bb17bc8>::User):
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+Started GET "/kit/selects" for ::1 at 2025-10-31 12:15:07 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/buttons" for ::1 at 2025-10-31 12:15:07 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 1.0ms | GC: 0.9ms)
+  Rendered layout layouts/kit.html.erb (Duration: 1.3ms | GC: 0.9ms)
+Completed 200 OK in 27ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/kit/selects" for ::1 at 2025-10-31 12:15:07 +0500
+Processing by KitController#selects as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/selects/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_section_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/selects/index.html.erb within layouts/kit (Duration: 0.5ms | GC: 0.4ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.8ms | GC: 0.4ms)
+Completed 200 OK in 26ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/kit/inputs" for ::1 at 2025-10-31 12:15:08 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-31 12:15:09 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000013bb17bc8>::User)
+Caused by: NameError (uninitialized constant #<Class:0x000000013bb17bc8>::User)
+
+Information for: ActionView::Template::Error (uninitialized constant #<Class:0x000000013bb17bc8>::User):
+    1: <!-- Registration form body -->
+    2: <%= form_with model: User.new, url: users_path, local: true, class: "form", id: "registrationForm" do |form| %>
+    3:   <div class="form-group">
+    4:     <%= form.label :first_name, "First Name", class: "form-label" %>
+    5:     <%= form.text_field :first_name, class: "input input-lg input-outline", placeholder: "Enter first name" %>
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+
+Information for cause: NameError (uninitialized constant #<Class:0x000000013bb17bc8>::User):
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+Started GET "/kit/inputs" for ::1 at 2025-10-31 12:15:11 +0500
+Processing by KitController#inputs as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/inputs/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/inputs/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit/modals" for ::1 at 2025-10-31 12:15:11 +0500
+Processing by KitController#modals as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/modals/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_body.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/login/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/forms/register/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/register/_body.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/layouts/block/_container.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered kit/modals/index.html.erb within layouts/kit (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000013bb17bc8>::User)
+Caused by: NameError (uninitialized constant #<Class:0x000000013bb17bc8>::User)
+
+Information for: ActionView::Template::Error (uninitialized constant #<Class:0x000000013bb17bc8>::User):
+    1: <!-- Registration form body -->
+    2: <%= form_with model: User.new, url: users_path, local: true, class: "form", id: "registrationForm" do |form| %>
+    3:   <div class="form-group">
+    4:     <%= form.label :first_name, "First Name", class: "form-label" %>
+    5:     <%= form.text_field :first_name, class: "input input-lg input-outline", placeholder: "Enter first name" %>
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+
+Information for cause: NameError (uninitialized constant #<Class:0x000000013bb17bc8>::User):
+  
+app/views/shared/forms/register/_body.html.erb:2
+app/views/shared/layouts/block/_container.html.erb:5
+app/views/kit/modals/index.html.erb:25
+app/controllers/kit_controller.rb:20:in 'KitController#modals'
+Started GET "/kit/forms" for ::1 at 2025-10-31 12:15:11 +0500
+Processing by KitController#forms as HTML
+Started GET "/" for ::1 at 2025-10-31 12:15:11 +0500
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/forms/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/forms/index.html.erb within layouts/kit (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 89ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.3ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.6ms)
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:15:14 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:17:34 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:18:22 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:18:24 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-31 12:18:28 +0500
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-31 12:18:28 +0500
+Started GET "/favicon.ico" for ::1 at 2025-10-31 12:18:28 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/kit" for ::1 at 2025-10-31 12:18:30 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:18:31 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-10-31 12:18:31 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_logo.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_trustpilot.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_search.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_country_selector.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_favorites_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_cart_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_login_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_burger_button.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/header/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/forms/_select_with_label.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_country_settings_dialog.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:18:34 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:18:46 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.6ms | GC: 0.3ms)
+  Rendered layout layouts/kit.html.erb (Duration: 8.3ms | GC: 0.3ms)
+Completed 200 OK in 34ms (Views: 11.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:19:03 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 5.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/kit" for ::1 at 2025-10-31 12:19:17 +0500
+Processing by KitController#index as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered kit/index.html.erb within layouts/kit (Duration: 2.3ms | GC: 2.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 7.7ms | GC: 2.0ms)
+Completed 200 OK in 32ms (Views: 10.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2025-10-31 12:19:38 +0500
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-10-31 12:19:38 +0500
+Started GET "/favicon.ico" for ::1 at 2025-10-31 12:19:38 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  

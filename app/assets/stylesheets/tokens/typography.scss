@@ -2,31 +2,43 @@
   /* Типографические токены */
   
   /* Font Sizes */
-  --font-size-3xs: 0.5rem; /* 8px */
-  --font-size-2xs: 0.625rem; /* 10px */
-  --font-size-xs: 0.75rem;  /* 12px */
-  --font-size-sm: 0.875rem; /* 14px */
-  --font-size-md: 1rem; /* 16px */
-  --font-size-lg: 1.125rem; /* 18px */
-  --font-size-xl: 1.25rem; /* 20px */
-  --font-size-2xl: 1.5rem; /* 24px */
-  --font-size-3xl: 1.875rem; /* 30px */
-  --font-size-4xl: 2.25rem; /* 36px */
-  --font-size-5xl: 3rem; /* 48px */
-  --font-size-6xl: 4rem; /* 64px */
-  --font-size-7xl: 5rem; /* 80px */
-  --font-size-8xl: 6rem; /* 96px */
+  --font-size-s01: var(--size-s01); /* 8px */
+  --font-size-s02: var(--size-s02); /* 10px */
+  --font-size-s03: var(--size-s03); /* 12px */
+  --font-size-s04: var(--size-s04); /* 14px */
+
+  --font-size-m01: var(--size-m01); /* 16px */
+  --font-size-m02: var(--size-m02); /* 18px */
+  --font-size-m03: var(--size-m03); /* 20px */
+  --font-size-m04: var(--size-m04); /* 22px */
+
+  --font-size-l01: var(--size-l01); /* 24px */
+  --font-size-l02: var(--size-l02); /* 26px */
+  --font-size-l03: var(--size-l03); /* 28px */
+  --font-size-l04: var(--size-l04); /* 30px */
+  
+  --font-size-xl01: var(--size-xl01); /* 32px */
+  --font-size-xl02: var(--size-xl02); /* 36px */
+  --font-size-xl03: var(--size-xl03); /* 40px */
+  --font-size-xl04: var(--size-xl04); /* 44px */
+  
+  --font-size-xxl01: var(--size-xxl01); /* 48px */
+  --font-size-xxl02: var(--size-xxl02); /* 56px */
+  --font-size-xxl03: var(--size-xxl03); /* 64px */
+  --font-size-xxl04: var(--size-xxl04); /* 72px */
+  --font-size-xxl05: var(--size-xxl05); /* 80px */
+
   
   /* Line Heights */
-  --line-height-tight: 1.2; /* 120% */
-  --line-height-normal: 1.5; /* 150% */
-  --line-height-relaxed: 1.75; /* 175% */
+  --line-height-s: 1.2em; /* 120% */
+  --line-height-m: 1.5em; /* 150% */
+  --line-height-l: 1.75em; /* 175% */
   
   /* Letter Spacing */
-  --letter-spacing-tight: -0.02em; 
-  --letter-spacing-normal: -0.01em; 
-  --letter-spacing-loose: 0.01em;
-  --letter-spacing-x-loose: 0.05em; 
+  --letter-spacing-s: -0.02em; 
+  --letter-spacing-m: -0.01em; 
+  --letter-spacing-l: 0.01em;
+  --letter-spacing-xl: 0.05em; 
   
   /* Font Families */
   --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;

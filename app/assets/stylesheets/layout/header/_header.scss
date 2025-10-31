@@ -60,13 +60,13 @@
   .btn {
     .btn-text {
       color: var(--color-text-secondary);
-      font-size: var(--font-size-md);
+      font-size: var(--size-m01);
     }
 
     .btn-icon {
       color: hsl(215 15% 50%);
-      width: var(--size-3xl);
-      height: var(--size-3xl);
+      width: var(--size-xl01);
+      height: var(--size-xl01);
     }
 
     &:hover {
@@ -93,7 +93,7 @@
       grid-template-areas: 
         "logo right"
         "search search";
-      gap: 1rem;
+      gap: var(--size-m01); // 16px
     }
 
     &__search {
@@ -128,7 +128,7 @@
 
 .logo {
   &__image {
-    height: 48px;
+    height: var(--size-xxl01); // 48px
     width: auto;
     max-width: 200px;
     min-width: 0;
@@ -140,7 +140,7 @@
 
 .trustpilot {
   &__image {
-    height: 20px;
+    height: var(--size-m03); // 20px
     width: auto;
     display: block;
     object-fit: contain;

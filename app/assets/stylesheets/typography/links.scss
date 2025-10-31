@@ -1,13 +1,13 @@
 @layer typography {
   /* Базовые стили для ссылок */
   a {
-    color: var(--color-text-primary);
+    color: var(--color-link-primary);
     text-decoration: underline;
     text-underline-offset: 0.125em;
     transition: color var(--transition);
 
     &:hover, &:focus {
-      color: var(--color-text-secondary);
+      color: var(--color-primary-hover);
     }
   }
 }
