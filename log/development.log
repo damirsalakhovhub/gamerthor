@@ -11810,3 +11810,13 @@ ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
   
 ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
   
+Started GET "/kit/buttons" for ::1 at 2025-10-31 12:24:39 +0500
+Processing by KitController#buttons as HTML
+  Rendering layout layouts/kit.html.erb
+  Rendering kit/buttons/index.html.erb within layouts/kit
+  Rendered shared/_page_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered kit/buttons/index.html.erb within layouts/kit (Duration: 3.7ms | GC: 0.0ms)
+  Rendered layout layouts/kit.html.erb (Duration: 4.8ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 5.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
